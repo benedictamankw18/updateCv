@@ -1,0 +1,177 @@
+html{
+    background-color: transparent;
+}
+
+body{
+    background-color: transparent;
+}
+
+.welcome-address{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20%;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    overflow: hidden;
+    font-style: normal;
+    transform: scale(1);
+    z-index: 30000;
+}
+
+
+.welcome-address div{
+    animation: address 20s ease-in 1000ms 1 normal;
+    transform: scale(1);
+
+}
+
+@keyframes address {
+    0%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(0px);
+    }
+    30.001%{
+        transform: translateY(-50px);
+    }
+    35%{
+        transform: translateY(-50px);
+    }
+    35.001%{
+
+        transform: translateY(-90px);
+    }
+    40%{
+        transform: translateY(-90px);
+    }
+    40.001%{
+        transform: translateY(-140px);
+    }
+    80%{
+        transform: translateY(-140px);
+    }
+    80.001%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+
+.welcome{
+    width: 100%;
+    height: auto;
+    animation: wecmain 20s linear 00s normal;
+    display: none;
+}
+
+.welcome span{
+    transform: scale(1);
+    opacity: 0;
+
+}
+
+
+.welcome span:nth-child(1){
+    transition: all 3s;
+    animation: wec 15s linear 00ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(2){
+    transition: all 3s;
+    animation: wec 14s linear 1500ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(3){
+    transition: all 3s;
+    animation: wec 13s linear 3000ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(4){
+    transition: all 3s;
+    animation: wec 12s linear 4500ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(5){
+    transition: all 3s;
+    animation: wec 11s linear 6000ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(6){
+    transition: all 3s;
+    animation: wec 10s linear 7500ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(7){
+    transition: all 3s;
+    animation: wec 9s linear 9000ms normal;
+    transform: scale(1);
+}
+
+@keyframes wec{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes wecmain{
+    0%{
+        display: block;
+        width: 20%;
+    }
+    90%{
+        display: block;
+    }
+    100%{
+        display: none;
+        width: 100%;
+    }
+} 
+
+n{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    animation: dot 5s ease-in-out 0ms infinite normal;
+    
+}
+
+
+
+.loader-dot2{
+    animation-delay: 2s;
+}
+
+.loader-dot3{
+    animation-delay: 4s;
+}
+
+
+@keyframes dot {
+    0%{
+        opacity: 0;
+        display: none;
+    }
+    100%{
+        display: inline;
+        opacity: 1;
+    }
+}

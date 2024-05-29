@@ -33,6 +33,7 @@ body {
 header,main,footer{
     margin: 0px;
     width: var(--fullWidth);
+    display: none;
 }
 
 header, footer{
@@ -63,6 +64,91 @@ h1{
     text-shadow: 0px 0px 10px var(--secondColor);
 }
 
+.scroll-top{
+    width: 86%;
+    height: 100px;
+    padding: 20px;
+    /* text-align: center; */
+    font-size: 50px;
+    font-family: "Exo", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--textColor);
+    background-color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0px 0px 10px var(--secondColor);
+    z-index: 100;
+    position: fixed;
+    top: 10px;
+    border-radius: 50px;
+    display: none;
+    animation: scroll-top 0.5s linear 0s normal;
+}
+
+@keyframes scroll-top {
+    0%{
+        margin-top: -100px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+.scroll-top-image{
+    width: auto;
+    height: auto;
+    display: inline;
+    position: absolute;
+    top: 10px;
+}
+
+.scroll-top-image img{
+    width: 80px;
+    height: 80px;
+    /* margin-top: auto; */
+    /* margin-right: auto; */
+    display: inline;
+    border-radius: 30px;
+}
+
+.scroll-top-image img:hover{
+    border-radius: 20px;
+}
+
+.scroll-top-name{
+    width: 100%;
+    height: auto;
+    display: inline;
+    text-align: center;
+    position: absolute;
+}
+
+.scroll-top-name p{
+    width: 100%;
+    height: 100%;
+    display: inline;
+    text-align: center;
+
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-image: url(./logo.jpeg);
+    background-size:contain;
+    margin-left: calc(50% + 100px);
+    margin-right: calc(auto);
+    border-radius: 50%;
+    bottom: 30px;
+    position: relative;
+}
+
+.logo img{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+}
+
 .main-self {
     width: 100%;
     height: max-content;
@@ -76,7 +162,7 @@ h1{
     margin-right: auto;
 }
 
-.self-image img {
+.self-image img{
     width: 300px;
     height: 300px;
     display: block;
@@ -122,7 +208,7 @@ h1{
 .job-title span{
     /* background-color: (); */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--champagne-pink);
+    -webkit-text-fill-color: #E45A84;
     animation: jobTitle 15s ease-in-out 0ms infinite normal;
 }
 

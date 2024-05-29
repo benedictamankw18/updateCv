@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Christ Apostolic Church Sounds of Christ">
+    <meta name="description" content="Benedict Amankwa web-develops">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./welcome.css">
     <link rel="shortcut icon" href="./image/mainLogo.jpeg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +15,57 @@
     <title>Benedict's CV</title>
 </head>
 <body>
+
+
+    
+    <div class="welcome-address" id="welcome-address" onload="setTimeout(myFunction(), 2000)">
+        <div class="welcome">
+            <span>W</span>
+            <span>E</span>
+            <span>L</span>
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+            <span>E</span>
+        </div>
+
+        <div class="loader">LOADING
+            <n class="loader-dot1">.</n>
+            <n class="loader-dot2">.</n>
+            <n class="loader-dot3">.</n>
+        </div>
+
+        <div class="are">
+            <span>A</span>
+            <span>R</span>
+            <span>E</span>        
+        </div>
+        <div class="you">
+            <span>Y</span>
+            <span>O</span>
+            <span>U</span>
+        </div>
+        <div class="ready">
+            <span>R</span>
+            <span>E</span>
+            <span>A</span>
+            <span>D</span>
+            <span>Y</span>
+        </div>
+
+        <div class="let-go">
+            <span>L</span>
+            <span>E</span>
+            <span>T</span>
+            <span>&nbsp;</span>
+            <span>G</span>
+            <span>O</span>
+        </div>
+
+
+</div>
+
+
     <header>
         <div class="background">
             <span></span>
@@ -81,9 +133,19 @@
         <h1>
     Portfolio
 </h1>
+    <div class="scroll-top" id="scroll-top">
+        <div class="scroll-top-image">
+            <img src="./IMG_9346 (2).jpg" alt="">
+        </div>
+        <div class="scroll-top-name">
+            <p>BENEDICT AMANKWA </p>
+        </div>
+    </div>
+
         <div class="main-self">
     <div class="self-image">
         <img src="./IMG_9346 (2).jpg" alt="">
+        <div class="logo"></div>
     </div>
     <div class="self-name">
         <p>BENEDICT AMANKWA </p>
@@ -586,4 +648,33 @@
         </span>
     </span>
 </body>
+<script>
+   
+const main = document.getElementsByTagName("main")[0]; // Get the first element
+const header = document.getElementsByTagName("header")[0];
+const footer = document.getElementsByTagName("footer")[0];
+
+
+function hideLoading() {
+const welcome = document.getElementById("welcome-address");
+welcome.style.display = "none";
+console.log("WELCOME, HOW ARE YOU");
+}
+
+setTimeout(function () {
+try {
+    hideLoading(); // Call the function inside the setTimeout callback
+    
+main.style.display = "block";
+header.style.display = "block";
+footer.style.display = "block";
+} catch (error) {
+    console.error("Error occurred:", error);
+}
+}, 20000);
+</script>
+
+<script src="script.js"></script>
+<script src="./welcome.js"></script>
+
 </html>
