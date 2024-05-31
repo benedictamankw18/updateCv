@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Benedict Amankwa web-develops">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./welcome.css">
-    <link rel="shortcut icon" href="./image/mainLogo.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
@@ -16,6 +17,13 @@
 </head>
 <body>
 
+    
+    <div class="loadingio-spinner-ripple-2by998twmg8" id="loading-spin">
+        <div class="ldio-yzaezf3dcmj">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
     
     <div class="welcome-address" id="welcome-address" onload="setTimeout(myFunction(), 2000)">
@@ -135,7 +143,7 @@
 </h1>
     <div class="scroll-top" id="scroll-top">
         <div class="scroll-top-image">
-            <img src="./IMG_9346 (2).jpg" alt="">
+            <img src="./coat.jpg" alt="">
         </div>
         <div class="scroll-top-name">
             <p>BENEDICT AMANKWA </p>
@@ -144,7 +152,7 @@
 
         <div class="main-self">
     <div class="self-image">
-        <img src="./IMG_9346 (2).jpg" alt="">
+        <img src="./coat.jpg" alt="">
         <div class="logo"></div>
     </div>
     <div class="self-name">
@@ -299,25 +307,27 @@
         <div class="main-project">
             <div class="project-title">Projects</div>
         <div class="categroy">
-            <select name="PROGAMMING LANGUAGE" id="PRO-LANG">
+            <select name="PROGAMMING LANGUAGE" id="PRO-LANG" onchange="getOption()">
                 
                 <option value="all">All</option>
                 <option value="java">JAVA</option>
                 <option value="c++">C++</option>
                 <option value="python">PYTHON</option>
-                <option value="website">WEBSITE DESGIN</option>
-                <option value="mysql">MySQL</option>
-                <option value="javascript">JavaScript</option>
-                <option value="cyberSecurity">Cyber Security</option>
-                <option value="ethicalHacking">Ethical HACKING</option>
+                <option value="visualBasic">VISUAL BASIC</option>
+                <option value="website">WEBSITE DESIGN</option>
+                <option value="mysql">MYSQL</option>
+                <option value="javascript">JAVASCRIPT</option>
+                <option value="cyberSecurity">CYBER SECURITY</option>
+                <option value="ethicalHacking">ETHICAL HACKING</option>
+                <option value="networking">NETWORKING</option>
 
             </select>
         </div>
         <div class="project-veiw ">
                 
-            <div class="project-veiw-card">
+            <div class="project-veiw-card visual-basic">
             <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
+                <img src="./VisualBasicNET.jpg" alt="">
             </div>
             <div class="project-veiw-about">
                 <div class="project-veiw-name">
@@ -332,9 +342,9 @@
             <div class="project-veiw-detail">More</div>
         </div>
 
-        <div class="project-veiw-card">
+        <div class="project-veiw-card java">
             <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
+                <img src="./java.jpeg" alt="">
             </div>
             <div class="project-veiw-about">
                 <div class="project-veiw-name">
@@ -349,9 +359,9 @@
             <div class="project-veiw-detail">More</div>
         </div>
        
-        <div class="project-veiw-card">
+        <div class="project-veiw-card c-plus-plus">
             <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
+                <img src="./cplusplus.jpg" alt="">
             </div>
             <div class="project-veiw-about">
                 <div class="project-veiw-name">
@@ -366,9 +376,9 @@
             <div class="project-veiw-detail">More</div>
         </div>
 
-        <div class="project-veiw-card">
+        <div class="project-veiw-card java">
             <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
+                <img src="./java.jpeg" alt="">
             </div>
             <div class="project-veiw-about">
                 <div class="project-veiw-name">
@@ -383,9 +393,9 @@
             <div class="project-veiw-detail">More</div>
         </div>
 
-        <div class="project-veiw-card">
+        <div class="project-veiw-card website">
             <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
+                <img src="./website.jpg" alt="">
             </div>
             <div class="project-veiw-about">
                 <div class="project-veiw-name">
@@ -400,153 +410,9 @@
             <div class="project-veiw-detail">More</div>
         </div>
 
-        <div class="project-veiw-card">
+        <div class="project-veiw-card networking">
             <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
-            </div>
-            <div class="project-veiw-about">
-                <div class="project-veiw-name">
-                    PROJECT NAME
-                </div>
-                <div class="project-veiw-summary">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
-                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
-                </div>
-            </div>
-            <div class="project-veiw-detail">More</div>
-        </div>
-        <div class="project-veiw-card">
-            <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
-            </div>
-            <div class="project-veiw-about">
-                <div class="project-veiw-name">
-                    PROJECT NAME
-                </div>
-                <div class="project-veiw-summary">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
-                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
-                </div>
-            </div>
-            <div class="project-veiw-detail">More</div>
-        </div>
-        <div class="project-veiw-card">
-            <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
-            </div>
-            <div class="project-veiw-about">
-                <div class="project-veiw-name">
-                    PROJECT NAME
-                </div>
-                <div class="project-veiw-summary">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
-                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
-                </div>
-            </div>
-            <div class="project-veiw-detail">More</div>
-        </div>
-        <div class="project-veiw-card">
-            <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
-            </div>
-            <div class="project-veiw-about">
-                <div class="project-veiw-name">
-                    PROJECT NAME
-                </div>
-                <div class="project-veiw-summary">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
-                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
-                </div>
-            </div>
-            <div class="project-veiw-detail">More</div>
-        </div>
-        <div class="project-veiw-card">
-            <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
-            </div>
-            <div class="project-veiw-about">
-                <div class="project-veiw-name">
-                    PROJECT NAME
-                </div>
-                <div class="project-veiw-summary">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
-                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
-                </div>
-            </div>
-            <div class="project-veiw-detail">More</div>
-        </div>
-        <div class="project-veiw-card">
-            <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
-            </div>
-            <div class="project-veiw-about">
-                <div class="project-veiw-name">
-                    PROJECT NAME
-                </div>
-                <div class="project-veiw-summary">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
-                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
-                </div>
-            </div>
-            <div class="project-veiw-detail">More</div>
-        </div>
-        <div class="project-veiw-card">
-            <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
-            </div>
-            <div class="project-veiw-about">
-                <div class="project-veiw-name">
-                    PROJECT NAME
-                </div>
-                <div class="project-veiw-summary">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
-                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
-                </div>
-            </div>
-            <div class="project-veiw-detail">More</div>
-        </div>
-        <div class="project-veiw-card">
-            <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
-            </div>
-            <div class="project-veiw-about">
-                <div class="project-veiw-name">
-                    PROJECT NAME
-                </div>
-                <div class="project-veiw-summary">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
-                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
-                </div>
-            </div>
-            <div class="project-veiw-detail">More</div>
-        </div>
-        <div class="project-veiw-card">
-            <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
-            </div>
-            <div class="project-veiw-about">
-                <div class="project-veiw-name">
-                    PROJECT NAME
-                </div>
-                <div class="project-veiw-summary">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
-                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
-                </div>
-            </div>
-            <div class="project-veiw-detail">More</div>
-        </div>
-        <div class="project-veiw-card">
-            <div class="project-veiw-img">
-                <img src="./blob-haikei.png" alt="">
+                <img src="./networking.jpeg" alt="">
             </div>
             <div class="project-veiw-about">
                 <div class="project-veiw-name">
@@ -561,14 +427,158 @@
             <div class="project-veiw-detail">More</div>
         </div>
 
+        <div class="project-veiw-card python">
+            <div class="project-veiw-img">
+                <img src="./python.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
 
+        <div class="project-veiw-card mysql">
+            <div class="project-veiw-img">
+                <img src="./mysql.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
 
+        <div class="project-veiw-card python">
+            <div class="project-veiw-img">
+                <img src="./python.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
 
+        <div class="project-veiw-card mysql">
+            <div class="project-veiw-img">
+                <img src="./mysql.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
 
+        <div class="project-veiw-card javascript">
+            <div class="project-veiw-img">
+                <img src="./javascript.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
 
+        <div class="project-veiw-card cyberSecurity">
+            <div class="project-veiw-img">
+                <img src="./cybersecurity.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
 
+        <div class="project-veiw-card ethical-hacking">
+            <div class="project-veiw-img">
+                <img src="./hacking.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
 
+        <div class="project-veiw-card website">
+            <div class="project-veiw-img">
+                <img src="./website.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
 
+        <div class="project-veiw-card website">
+            <div class="project-veiw-img">
+                <img src="./website.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
         </div>
 
         </div>
@@ -577,24 +587,26 @@
 
         <div class="main-side-nav">
             <div class="side-nav">
-                <div class="show">
+                <div class="show" onclick="navBarOpen()">
                     <i class="fa fa-navicon"></i>
                 </div>
-                <div class="hide">
+                <div class="hide" onclick="navBarClose()">
                     <i class="fa fa-close"></i>
                 </div>
                 <div class="side-nav-icon">
-                    <i class="fa fa-home"></i>
-                    <i class="fa fa-hacker-news"></i>
-                    <i class="fa fa-book"></i>
-                    <i class="fa fa-folder"></i>
+                    <a href="#"><i class="fa fa-home"></i></a>
+                    <a href="#"><i class="fa fa-hacker-news"></i></a>
+                    <a href="#"><i class="fa fa-book"></i></a>
+                    <a href="#"><i class="fa fa-folder"></i></a>
                 </div>
                 <div class="contact-icon">
-                    <i class="fa fa-phone"></i>
+                   <a herf="#"><i class="fa fa-phone"></i></a>
                 </div>
             </div>
             
         </div>
+        
+
 
         <div class="veiw-nav">
             <div class="show-text">
@@ -604,74 +616,95 @@
                 <span class="close">CLOSE</span>
             </div>
             <div class="side-nav-icon-text">
-                <span class="home">HOME</span>
-                <span class="hacker">SKILLS</span>
-                <span class="book">PROFILE</span>
-                <span class="folder">PROJECT</span>
+                <a href="#" class="home">HOME</a>
+                <a href="#" class="hacker">SKILLS</a>
+                <a href="#" class="book">PROFILE</a>
+                <a href="#" class="folder">PROJECT</a>
             </div>
             <div class="contact-text">
-                <span class="close">CONTACT ME</span>
+                <a href="#"><span class="close">CONTACT ME</span></a>
             </div>
         </div>
+     
+   
+        
+        <footer>
+            <p>CERTIFICATIONS</p>
+        <div class="main-cert">
+            
+                <div class="cert-scroll-left">
+                    <i class="fa fa-chevron-left arrow" onclick="certScrollRight()"></i>
+                </div>
+                <div class="cert-scroll-right">
+                    <i class="fa fa-chevron-right arrow" onclick="certScrollLeft()"></i>
+                </div>
+                <div class="list-cert">
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+            </div>
+        </div> 
 
+       <div class="scroll-cert-pos">
+            <span class="scroll-cert-pos-fill"></span>
+       </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-
-       
+       <div class="top">
+        <a href="#"><i class="fa fa-chevron-right"></i></a>
+       </div>
     </footer>
 
-    <span class="footer">
-        <span id="footer">
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true" title="facebook"></i></a>&nbsp;&nbsp;
-            <a href="https://www.X.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true" title="twitter"></i></a>&nbsp;&nbsp;
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" title="instagram"></i></a>&nbsp;&nbsp;
-            <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube" aria-hidden="true" title="youtube"></i></a>
+    <span class="social">
+        <span class="social-footer">
+            <a href="https://www.telegram.com/" target="_blank"><i class="fa fa-telegram" aria-hidden="true" title="telegram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" title="linkedin"></i></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true" title="whatsapp"></i></a>
+            
+            
         </span>
     </span>
 </body>
 <script>
-   
-const main = document.getElementsByTagName("main")[0]; // Get the first element
-const header = document.getElementsByTagName("header")[0];
-const footer = document.getElementsByTagName("footer")[0];
 
-
-function hideLoading() {
-const welcome = document.getElementById("welcome-address");
-welcome.style.display = "none";
-console.log("WELCOME, HOW ARE YOU");
-}
-
-setTimeout(function () {
-try {
-    hideLoading(); // Call the function inside the setTimeout callback
-    
-main.style.display = "block";
-header.style.display = "block";
-footer.style.display = "block";
-} catch (error) {
-    console.error("Error occurred:", error);
-}
-}, 20000);
 </script>
 
 <script src="script.js"></script>
