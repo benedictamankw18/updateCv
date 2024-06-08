@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Side Navigation Menu Styles */
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /* Dropdown Menu Styles (if needed) */
+        .dropdown-click {
+            /* Add your dropdown styles here */
+        }
+
+        /* Additional Styles (customize as needed) */
+        #main {
+            transition: margin-left 0.5s;
+            padding: 20px;
+        }
+
+        /* Your CSS styles for the dropdown button */
+        .dropbtn {
+            /* Add your styles here */
+        }
+
+        /* Your CSS styles for the dropdown content */
+        .dropdown-content {
+            /* Add your styles here */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Side Navigation Menu -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Open Button -->
+    <span onclick="openNav()">Open</span>
+
+    <!-- Main Content -->
+    <div id="main">
+        <!-- Your page content goes here -->
+    </div>
+
+<!-- Button to toggle the dropdown -->
+<button class="dropbtn">Toggle Dropdown</button>
+<button class="dropbtn2">Toggle Dropdown</button>
+
+
+
+<!-- Dropdown content -->
+<div class="dropdown-content">
+    <a href="#">Option 1</a>
+    <a href="#">Option 2</a>
+    <a href="#">Option 3</a>
+</div>
+
+
+    <!-- JavaScript -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        var dropdowns = document.getElementById("mySidenav");
+   //     window.onclick = function() {
+   //         console.log("Clicked!"); // Debugging: Check if this message appears in the console
+   //         if (!dropdowns.style.width==="0px") {
+    //            console.log("IF-Clicked!"); // Debugging: Check if this message appears in the console
+     //           console.log(dropdowns.style.width); // Debugging: Check if this message appears in the console
+                //for (var i = 0; i < dropdowns.length; i++) {
+                    //var openDropdown = dropdowns[i];
+                   // dropdowns.style.width = "0";
+                //}
+      //      }
+       // };
+
+       var dropdowns = document.getElementsByClassName("dropdown-content");
+
+           // Close the dropdown menu if the user clicks outside of it
+           window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        console.log("Working");
+                        openDropdown.classList.remove('show');
+                        openDropdown.style.display = "none";
+                        console.log(openDropdown.style.width); // Debugging: Check if this message appears in the console
+
+                    }
+                }
+            }
+        };
+
+        // Toggle the dropdown when clicking the button
+        document.querySelector(".dropbtn").addEventListener("click", function() {
+            document.querySelector(".dropdown-content").classList.toggle("show");
+            dropdowns[0].style.display = "block";
+        });
+        document.querySelector(".dropbtn2").addEventListener("click", function() {
+            document.querySelector(".dropdown-content").classList.remove("show");
+        }); 
+    </script>
+
+
+    
+</body>
+</html>

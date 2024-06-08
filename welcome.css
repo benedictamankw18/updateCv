@@ -1,0 +1,231 @@
+html{
+    background-color: transparent;
+}
+
+body{
+    background-color: transparent;
+}
+
+.welcome-address{
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 2%;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    overflow: hidden;
+    font-style: normal;
+    transform: scale(1);
+    z-index: 30000;
+}
+
+
+.welcome-address div{
+    animation: address 20s ease-in 1000ms 1 normal;
+    transform: scale(1);
+
+}
+
+@keyframes address {
+    0%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(0px);
+    }
+    30.001%{
+        transform: translateY(-50px);
+    }
+    35%{
+        transform: translateY(-50px);
+    }
+    35.001%{
+
+        transform: translateY(-90px);
+    }
+    40%{
+        transform: translateY(-90px);
+    }
+    40.001%{
+        transform: translateY(-140px);
+    }
+    80%{
+        transform: translateY(-140px);
+    }
+    80.001%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+
+.welcome{
+    width: 100%;
+    height: auto;
+    animation: wecmain 20s linear 00s normal;
+    display: none;
+}
+
+.welcome span{
+    transform: scale(1);
+    opacity: 0;
+
+}
+
+
+.welcome span:nth-child(1){
+    transition: all 3s;
+    animation: wec 15s linear 00ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(2){
+    transition: all 3s;
+    animation: wec 14s linear 1500ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(3){
+    transition: all 3s;
+    animation: wec 13s linear 3000ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(4){
+    transition: all 3s;
+    animation: wec 12s linear 4500ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(5){
+    transition: all 3s;
+    animation: wec 11s linear 6000ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(6){
+    transition: all 3s;
+    animation: wec 10s linear 7500ms normal;
+    transform: scale(1);
+}
+
+.welcome span:nth-child(7){
+    transition: all 3s;
+    animation: wec 9s linear 9000ms normal;
+    transform: scale(1);
+}
+
+@keyframes wec{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes wecmain{
+    0%{
+        display: block;
+        width: 20%;
+    }
+    90%{
+        display: block;
+    }
+    100%{
+        display: none;
+        width: 100%;
+    }
+} 
+
+d{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    animation: dot 5s ease-in-out 0ms infinite normal;
+    
+}
+
+
+
+.loader-dot2{
+    animation-delay: 2s;
+}
+
+.loader-dot3{
+    animation-delay: 4s;
+}
+
+
+@keyframes dot {
+    0%{
+        opacity: 0;
+        display: none;
+    }
+    100%{
+        display: inline;
+        opacity: 1;
+    }
+}
+
+@keyframes ldio-yzaezf3dcmj {
+    0% {
+      top: 96px;
+      left: 96px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 18px;
+      left: 18px;
+      width: 156px;
+      height: 156px;
+      opacity: 0;
+    }
+  }
+  .ldio-yzaezf3dcmj div {
+    position: absolute;
+    border-width: 4px;
+    border-style: solid;
+    opacity: 1;
+    border-radius: 50%;
+    animation: ldio-yzaezf3dcmj 1s cubic-bezier(0,0.2,0.8,1) infinite;
+  }
+  .ldio-yzaezf3dcmj div:nth-child(1) {
+    border-color: #e90c59;
+    animation-delay: 0s;
+  }
+  .ldio-yzaezf3dcmj div:nth-child(2) {
+    border-color: #46dff0;
+    animation-delay: -0.5s;
+  }
+  .loadingio-spinner-ripple-2by998twmg8 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0px;
+  }
+  .ldio-yzaezf3dcmj {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+  .ldio-yzaezf3dcmj div { box-sizing: content-box; }
