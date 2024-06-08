@@ -48,29 +48,31 @@ function certScrollRight() {
 }
 
 let navShow = false;
+let iconText =   document.getElementsByClassName("text-icon"); 
 
 function navBarOpen(){
-  document.getElementsByClassName("veiw-nav")[0].style.width = "200px";
-  document.getElementsByClassName("veiw-nav")[0].style.display = "block";
-  document.getElementsByClassName("show-text")[0].style.display = "none";
+  document.getElementsByClassName("main-side-nav")[0].style.width = "250px";
   document.getElementsByClassName("show")[0].style.display = "none";
-  document.getElementsByClassName("hide-text")[0].style.display = "block";
   document.getElementsByClassName("hide")[0].style.display = "block";
-  document.getElementsByClassName("veiw-nav")[0].style.transition = "width  6s ease";
-  // document.getElementsByClassName("veiw-nav")[0].classList.remove('show');
+  for(var x in iconText){
+    iconText[x].style.display = "inline";
+    iconText[x].style.transition = "all  3s ease";
+  }
+  document.getElementsByClassName("main-side-nav")[0].style.transition = "width  0.3s ease";
   navShow = true;
 }
 
 function navBarClose(){
-  document.getElementsByClassName("veiw-nav")[0].style.width = "0px";
-  document.getElementsByClassName("veiw-nav")[0].style.display = "none";
-  document.getElementsByClassName("show-text")[0].style.display = "block";
+  document.getElementsByClassName("main-side-nav")[0].style.width = "70px";
   document.getElementsByClassName("show")[0].style.display = "block";
-  document.getElementsByClassName("hide-text")[0].style.display = "none";
   document.getElementsByClassName("hide")[0].style.display = "none";
-  document.getElementsByClassName("veiw-nav")[0].style.transition = "width  6s ease";
-  // document.getElementsByClassName("veiw-nav")[0].classList.toggle('show');
-  navShow = false;
+  for(var x in iconText){
+    // console.info(iconText[x]);
+    iconText[x].style.display = "none";
+    iconText[x].style.transition = "all  3s ease 3s";
+  }
+   document.getElementsByClassName("main-side-nav")[0].style.transition = "width  0.3s ease";
+ navShow = false;
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -94,9 +96,9 @@ function navBarClose(){
 //   }
 // }
 
-document.getElementsByClassName("veiw-nav")[0].addEventListener("mouseout", function() {
+document.getElementsByClassName("main-side-nav")[0].addEventListener("mouseout", function() {
   console.log('mouseout');
-  if(navShow){
+  if(!navShow){
   document.getElementsByTagName("header")[0].addEventListener("click", function() {
   console.log('clicked on the header');
     navBarClose();
@@ -112,7 +114,7 @@ document.getElementsByClassName("veiw-nav")[0].addEventListener("mouseout", func
         navBarClose();
         navShow=false;
       });
-      documentgetElementsByClassName("social")[0].addEventListener("click", function() {
+      document.getElementsByClassName("social")[0].addEventListener("click", function() {
         console.log('clicked on the social');
           navBarClose();
           navShow=false;
@@ -712,3 +714,15 @@ function getOption() {
   console.log(obj.options[obj.selectedIndex].text);
 }
 
+
+
+
+
+var img_width = document.querySelectorAll(".cert");
+
+console.log(document.getElementsByClassName("list-cert")[0].style.width)
+
+for(var i = 0; i< img_width.length; i++){
+  console.log(img_width[i].style.width+"px");
+  console.log("img_width["+i+"].style.width");
+}
