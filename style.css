@@ -2421,7 +2421,16 @@ main{
 }
 
 
+.top{
+    width: 40px;
+    height: 40px;
+    right: 10px;
+}
 
+.top a i{
+    font-size: 30px;
+    padding: 5px;
+}
 }
 
 

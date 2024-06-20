@@ -1,7 +1,6 @@
 
 const main = document.getElementsByTagName("main")[0];
 
-
 window.onscroll = function() {scrollFunction()};
 // window.onclick = function() {navBarClose()};
 
@@ -29,23 +28,150 @@ let clickCounter = 0;
 const scroll_cert_pos_fill = document.getElementsByClassName("scroll-cert-pos-fill")[0]; 
 let fill = 8;
 
-function certScrollLeft() { 
-    if (clickCounter < 10) {
-      certLists.style.transition = "transform 01s ease";
-        certLists.style.transform += `translateX(-270px)`;
-        clickCounter++;
-        scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
-    }
-}
 
-function certScrollRight() { 
-  if (clickCounter > 0) {
+let windowWidth = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+// let windowHeight = window.innerHeight
+// || document.documentElement.clientHeight
+// || document.body.clientHeight;
+
+
+// function certScrollLeft() { 
+//     if (clickCounter < 10) {
+//       certLists.style.transition = "transform 01s ease";
+//         certLists.style.transform += `translateX(-270px)`;
+//         clickCounter++;
+//         scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+//     }
+// }
+
+// function certScrollRight(size) { 
+//   if (clickCounter > 0) {
+//     certLists.style.transition = "transform 01s ease";
+//       certLists.style.transform += `translateX(270px)`;
+//       clickCounter--; 
+//       scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+//   }
+// }
+
+if(windowWidth >= 1025 && windowWidth <= 1200){
+  
+function certScrollLeft() { 
+  if (clickCounter < 9) {
     certLists.style.transition = "transform 01s ease";
-      certLists.style.transform += `translateX(270px)`;
-      clickCounter--; 
+      certLists.style.transform += `translateX(-220px)`;
+      clickCounter++;
       scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
   }
 }
+
+function certScrollRight(size) { 
+if (clickCounter > 0) {
+  certLists.style.transition = "transform 01s ease";
+    certLists.style.transform += `translateX(220px)`;
+    clickCounter--; 
+    scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+}
+}
+}else if(windowWidth >= 769 && windowWidth <= 1024){
+  
+function certScrollLeft() { 
+  if (clickCounter < 10) {
+    certLists.style.transition = "transform 01s ease";
+      certLists.style.transform += `translateX(-210px)`;
+      clickCounter++;
+      scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+  }
+}
+
+function certScrollRight(size) { 
+if (clickCounter > 0) {
+  certLists.style.transition = "transform 01s ease";
+    certLists.style.transform += `translateX(210px)`;
+    clickCounter--; 
+    scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+}
+}
+}else if(windowWidth >= 481 && windowWidth <= 768){
+  
+function certScrollLeft() { 
+  if (clickCounter < 10) {
+    certLists.style.transition = "transform 01s ease";
+      certLists.style.transform += `translateX(-230px)`;
+      clickCounter++;
+      scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+  }
+}
+
+function certScrollRight(size) { 
+if (clickCounter > 0) {
+  certLists.style.transition = "transform 01s ease";
+    certLists.style.transform += `translateX(230px)`;
+    clickCounter--; 
+    scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+}
+}
+}else if(windowWidth >= 320 && windowWidth <= 480){
+  
+function certScrollLeft() { 
+  if (clickCounter < 10) {
+    certLists.style.transition = "transform 01s ease";
+      certLists.style.transform += `translateX(-250px)`;
+      clickCounter++;
+      scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+  }
+}
+
+function certScrollRight(size) { 
+if (clickCounter > 0) {
+  certLists.style.transition = "transform 01s ease";
+    certLists.style.transform += `translateX(250px)`;
+    clickCounter--; 
+    scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+}
+}
+}else if(windowWidth >= 100 && windowWidth <= 319){
+  
+function certScrollLeft() { 
+  if (clickCounter < 10) {
+    certLists.style.transition = "transform 01s ease";
+      certLists.style.transform += `translateX(-270px)`;
+      clickCounter++;
+      scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+  }
+}
+
+function certScrollRight(size) { 
+if (clickCounter > 0) {
+  certLists.style.transition = "transform 01s ease";
+    certLists.style.transform += `translateX(270px)`;
+    clickCounter--; 
+    scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+}
+}
+}else{
+  
+function certScrollLeft() { 
+  if (clickCounter < 10) {
+    certLists.style.transition = "transform 01s ease";
+      certLists.style.transform += `translateX(-270px)`;
+      clickCounter++;
+      scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+  }
+}
+
+function certScrollRight(size) { 
+if (clickCounter > 0) {
+  certLists.style.transition = "transform 01s ease";
+    certLists.style.transform += `translateX(270px)`;
+    clickCounter--; 
+    scroll_cert_pos_fill.style.width = `${clickCounter * fill + 20}px`;
+}
+}
+}
+
 
 let navShow = false;
 let iconText =   document.getElementsByClassName("text-icon"); 
