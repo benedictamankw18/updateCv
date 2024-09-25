@@ -1,0 +1,749 @@
+<?php include "contact.php"; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benedict Amankwa web-develops">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./welcome.css">
+    <link rel="shortcut icon" href="./logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Benedict's CV</title>
+</head>
+<body>
+
+    <div class="loadingio-spinner-ripple-2by998twmg8" id="loading-spin">
+        <div class="ldio-yzaezf3dcmj">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    
+    <div class="welcome-address" id="welcome-address" onload="setTimeout(myFunction(), 2000)">
+        <div class="welcome">
+            <span>W</span>
+            <span>E</span>
+            <span>L</span>
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+            <span>E</span>
+        </div>
+
+        <div class="loader">LOADING
+            <d class="loader-dot1">.</d>
+            <d class="loader-dot2">.</d>
+            <d class="loader-dot3">.</d>
+        </div>
+
+        <div class="are">
+            <span>A</span>
+            <span>R</span>
+            <span>E</span>        
+        </div>
+        <div class="you">
+            <span>Y</span>
+            <span>O</span>
+            <span>U</span>
+        </div>
+        <div class="ready">
+            <span>R</span>
+            <span>E</span>
+            <span>A</span>
+            <span>D</span>
+            <span>Y</span>
+        </div>
+
+        <div class="let-go">
+            <span>L</span>
+            <span>E</span>
+            <span>T</span>
+            <span>&nbsp;</span>
+            <span>G</span>
+            <span>O</span>
+        </div>
+
+
+</div>
+
+
+    <header>
+        <div class="background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+
+        <h1>
+    Portfolio
+</h1>
+    <div class="scroll-top" id="scroll-top">
+        <div class="scroll-top-image">
+            <img src="./coat.jpg" alt="">
+        </div>
+        <div class="scroll-top-name">
+            <p>BENEDICT AMANKWA </p>
+        </div>
+    </div>
+
+        <div class="main-self">
+    <div class="self-image">
+        <img src="./coat.jpg" alt="">
+        <div class="logo"></div>
+    </div>
+    <div class="self-name">
+        <p>BENEDICT AMANKWA </p>
+    </div>
+    <div class="self-job-title">
+        <p>I AM A </p>
+        <div class="job-title">
+        <span>WEB DEVELOPER</span>
+        <span>FRONTEND DEVELOPER</span>
+        <span>BACKEND DEVELOPER</span>
+        <span>SOFTWARE DEVELOPER</span>
+        <span>UI/UX DESIGNER</span>
+        <span>CYBER SECURITY</span>
+        <span>ETHICAL HACKER</span>
+        <span>WEB DEVELOPER</span>
+    </div>
+</div>
+</div>
+
+
+
+<div class="main-profile">
+    <div class="profile-title">Profile</div>
+    <p class="profile-text">
+        I am a hardworking student seeking employment where I can utilize my skills and passion 
+        to further a company's mission. I am technologically adept, with experience in various social
+         media platforms, office technology programs, and advanced computer skills. I am bringing forth a 
+         positive attitude, willingness, and motivation to learn new programs.</p>
+</div>
+
+    </header>
+
+    <main>
+        <div class="skills" id="SKILLS">
+        <div class="main-skills">
+    <div class="title-skills">Skills</div>
+    <div class="main-Tech-skills">
+        <div class="Tech-skills-title"> Technical Skills </div>
+        <ul class="Tech-skills-list">
+            <li>Programming languages: Python, Java, C++, JavaScript, HTML, CSS, PHP, REACT</li>
+            <li>Ethical hacking</li>
+            <li>Cyber Security</li>
+            <li>Database Management: MYSQL</li>
+            <li>UI/UX Designer: Figma</li>
+            <li>Data Structure and Algorithm: C++, Java</li>
+            <li> Software development tools: Git, GitHub</li>
+            <li>Cloud computing platforms: AWS, Azure, GCP</li>
+            <li> Data analysis tools: MySQL </li>
+            <li>Proficient in Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</li>
+            <li> Advanced computer skills, including proficiency in hardware, software troubleshooting and Many More</li>
+        </ul>
+    </div>
+
+    <div class="main-soft-skills">
+        <div class="soft-skills-title"> Soft Skills </div>
+        <ul class="soft-skills-list">
+            <li> Positive attitude</li>
+            <li> Willingness to learn</li>
+            <li> Motivation to succeed</li>
+            <li> Excellent communication and interpersonal skills </li>
+            <li> Problem-solving </li>
+            <li> Easy Adapting to Changes</li>
+        </ul>
+    </div>
+</div>
+<div class="main-img programming">
+    <img src="./progromming (1).jpeg" alt="">
+</div>
+</div>
+<div class="secondveiw">
+<div class="experience">
+    <div class="main-experience">
+<div class="title-experience">Experience</div>
+<div class="text-experience">
+    <p class="experience-title">I have over three(3) years of experience in software development, 
+        including experience in both front-end and back-end development.
+        I have worked on a variety of projects, including:</p>
+    <ul class="experience-list">
+        <li>Developed a web application for a Fortune 10 company that allows users to manage their finances.</li>
+        <li>Built a mobile application for a startup that helps users find and book local services.</li>
+        <li>Implemented a machine learning algorithm to predict customer churn for a SaaS company.</li>
+
+    </ul>
+</div>
+</div>
+<div class="main-img hacking">
+<img src="./progromming (3).jpeg" alt="">
+</div>
+</div>
+</div>
+
+<div class="thirdveiw" id="PROFILE">
+    <div class="education">
+        <div class="main-education">
+    <div class="title-education">Education</div>
+    <div class="text-education">
+        <ul class="education-list">
+            <li>
+                <c style="font-weight: 700; display:block;">Akwamuman Senior High School, Akosombo (2020-2023)</c>
+                <n><b>General Art</b>: (Grade: 12)</n>
+            </li>
+            <li>
+                <c style="font-weight: 700; display:block;">University Of Education, Winneba (2023-2027)</c>
+                <n><b>Bachelor of Science (ICT Education)</b>: (GPA: 3.5/4.0)</n>
+            </li>    
+        </ul>
+    </div>
+    </div>
+    <div class="main-img project">
+    <img src="./progromming (4).jpeg" alt="">
+    </div>
+    </div>
+    </div>
+
+    <div class="forthview">
+    <div class="available">
+    <div class="available-title">Availability</div>
+    <p class="available-content">I am available for immediate employment. 
+        I am willing to relocate for the right opportunity. &nbsp; 
+        <br>
+        <form action="contact.php" method="post">
+            <button type="submit" name="contact" style=" padding: 10px 20px;border-radius: 5px; border: 1px solid black;
+                margin: 5px 0px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                font-size: 20px; font-weight: 700; background-color: #0011ff; color: whitesmoke;
+                box-shadow: 5px 5px 10px var(--boxShadowColor);">Contact</button>
+        </form>
+    </p>
+</div>
+        <div class="reference">
+        <div class="reference-title">Reference</div>
+        <p class="reference-content" style="display: none;">Available upon request.</p>
+        
+            <div class="main-card-ref">
+                <div class="card-ref">
+                    <div class="img-ref">
+                        <img src="./blob-haikei.png" alt="">
+                    </div>
+                    <div class="ref-detail">FULL NAME</div>
+                    <div class="ref-contact" onclick="openContact()">Contact</div>
+                </div>
+
+                <div class="card-ref">
+                    <div class="img-ref">
+                        <img src="./blob-scene-haikei (1).png" alt="">
+                    </div>
+                    <div class="ref-detail">FULL NAME</div>
+                    <div class="ref-contact" onclick="openContact()">Contact</div>
+                </div>
+
+                <div class="card-ref">
+                    <div class="img-ref">
+                        <img src="./blob-haikei (2).png" alt="">
+                    </div>
+                    <div class="ref-detail">FULL NAME</div>
+                    <div class="ref-contact" onclick="openContact()">Contact</div>
+                </div>
+        </div>
+        </div>
+        </div>
+        <div class="main-project" id="PROJECT">
+            <div class="project-title">Projects</div>
+        <div class="categroy">
+            <select name="PROGAMMING LANGUAGE" id="PRO-LANG" onchange="getOption()">
+                
+                <option value="all">All</option>
+                <option value="java">JAVA</option>
+                <option value="c++">C++</option>
+                <option value="python">PYTHON</option>
+                <option value="visualBasic">VISUAL BASIC</option>
+                <option value="website">WEBSITE DESIGN</option>
+                <option value="mysql">MYSQL</option>
+                <option value="javascript">JAVASCRIPT</option>
+                <option value="cyberSecurity">CYBER SECURITY</option>
+                <option value="ethicalHacking">ETHICAL HACKING</option>
+                <option value="networking">NETWORKING</option>
+
+            </select>
+        </div>
+        <div class="project-veiw ">
+                
+            <div class="project-veiw-card visual-basic">
+            <div class="project-veiw-img">
+                <img src="./VisualBasicNET.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card java">
+            <div class="project-veiw-img">
+                <img src="./java.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+       
+        <div class="project-veiw-card c-plus-plus">
+            <div class="project-veiw-img">
+                <img src="./cplusplus.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card java">
+            <div class="project-veiw-img">
+                <img src="./java.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card website">
+            <div class="project-veiw-img">
+                <img src="./website.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card networking">
+            <div class="project-veiw-img">
+                <img src="./networking.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card python">
+            <div class="project-veiw-img">
+                <img src="./python.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card mysql">
+            <div class="project-veiw-img">
+                <img src="./mysql.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card python">
+            <div class="project-veiw-img">
+                <img src="./python.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card mysql">
+            <div class="project-veiw-img">
+                <img src="./mysql.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card javascript">
+            <div class="project-veiw-img">
+                <img src="./javascript.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card cyberSecurity">
+            <div class="project-veiw-img">
+                <img src="./cybersecurity.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card ethical-hacking">
+            <div class="project-veiw-img">
+                <img src="./hacking.jpeg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card website">
+            <div class="project-veiw-img">
+                <img src="./website.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+
+        <div class="project-veiw-card website">
+            <div class="project-veiw-img">
+                <img src="./website.jpg" alt="">
+            </div>
+            <div class="project-veiw-about">
+                <div class="project-veiw-name">
+                    PROJECT NAME
+                </div>
+                <div class="project-veiw-summary">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Minima ullam exercitationem sit rem eveniet eos excepturi iure praesentium commodi, 
+                     illo laboriosam. Repudiandae, accusantium in velit enim labore recusandae quas sit?
+                </div>
+            </div>
+            <div class="project-veiw-detail">More</div>
+        </div>
+        </div>
+
+        </div>
+    </div>
+</main>
+
+    
+</div>
+        <div class="main-side-nav">
+            <div class="side-nav">
+                <div class="show" onclick="navBarOpen()">
+                    <div class="show-text">
+                        <i class="fa fa-navicon"></i>
+                        <span class="navicon text-icon">OPEN</span>
+                    </div>
+                    
+                </div>
+                <div class="hide" onclick="navBarClose()">
+                    <div class="hide-text">
+                        <i class="fa fa-close"></i> 
+                        <span class="close text-icon">CLOSE</span>
+                    </div>
+                </div>
+                <div class="side-nav-icon">
+                    <a href="#">
+                        <i class="fa fa-home"></i>
+                        <span class="home text-icon">HOME</span>
+                    </a>
+                    <a href="#SKILLS">
+                        <i class="fa fa-hacker-news"></i>
+                        <span class="hacker text-icon">SKILLS</span>
+                    </a>
+                    <a href="#PROFILE">
+                        <i class="fa fa-book"></i>
+                        <span class="book text-icon">PROFILE</span>
+                    </a>
+                    <a href="#PROJECT">
+                        <i class="fa fa-folder"></i>
+                        <span class="folder text-icon">PROJECT</span>
+                    </a>
+                </div>
+                <div class="contact-icon">
+                   <a herf="#" onclick="openContact()">
+                        <i class="fa fa-phone"></i>
+                        <span class="contact-text text-icon">CONTACT ME</span>
+                   </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <footer>
+            <p>CERTIFICATIONS</p>
+        <div class="main-cert">
+            
+                <div class="cert-scroll-left">
+                    <i class="fa fa-chevron-left arrow" onclick="certScrollRight(270)"></i>
+                </div>
+                <div class="cert-scroll-right">
+                    <i class="fa fa-chevron-right arrow" onclick="certScrollLeft(270)"></i>
+                </div>
+                <div class="list-cert">
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (4).jpeg" alt="">
+                </div>
+                <div class="cert">
+                    <img src="./progromming (1).jpeg" alt="">
+                </div>
+            </div>
+        </div> 
+
+       <div class="scroll-cert-pos">
+            <span class="scroll-cert-pos-fill"></span>
+       </div>
+
+       <div class="main-side-nav-small" >
+        <div class="side-nav-small">
+            <div class="side-nav-icon-small">
+                <a href="#">
+                    <i class="fa fa-home"></i>
+                    <!-- <span class="home-small text-icon-small">HOME</span> -->
+                </a>
+                <a href="#SKILLS">
+                    <i class="fa fa-hacker-news"></i>
+                    <!-- <span class="hacker-small text-icon-small">SKILLS</span> -->
+                </a>
+                <a href="#PROFILE">
+                    <i class="fa fa-book"></i>
+                    <!-- <span class="book-small text-icon-small">PROFILE</span> -->
+                </a>
+                <a href="#PROJECT">
+                    <i class="fa fa-folder"></i>
+                    <!-- <span class="folder-small text-icon-small">PROJECT</span> -->
+                </a>
+               <a herf="#" onclick="openContact()">
+                    <i class="fa fa-phone"></i>
+                    <!-- <span class="contact-text-small text-icon-small">CONTACT ME</span> -->
+               </a>
+        </div>
+         <div class="show-small" onclick="SmallNav()">
+            <div class="show-text-small">
+                <i class="fa fa-navicon"></i>
+            </div>
+        </div>
+        <div class="hide-small" onclick="SmallNav()">
+            <div class="hide-text-small">
+                <i class="fa fa-close"></i> 
+            </div>
+        </div>
+        </div>
+           
+        </div>
+
+       <div class="top">
+        <a href="#"><i class="fa fa-chevron-right"></i></a>
+       </div>
+    </footer>
+
+    <span class="social">
+        <span class="social-footer">
+            <a href="https://www.telegram.com/" target="_blank"><i class="fa fa-telegram" aria-hidden="true" title="telegram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true" title="linkedin"></i></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true" title="whatsapp"></i></a>
+            
+            
+        </span>
+    </span>
+</body>
+
+<script src="script.js"></script>
+<script src="./welcome.js"></script>
+
+</html>

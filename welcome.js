@@ -4,13 +4,16 @@ function displayContent() {
     const header = document.getElementsByTagName("header")[0];
     const footer = document.getElementsByTagName("footer")[0];
     const main_side_nav = document.getElementsByClassName("main-side-nav")[0]; 
+    const main_side_nav_small = document.getElementsByClassName("main-side-nav-small")[0]; 
     const social = document.getElementsByClassName("social")[0]; 
     
+    main_side_nav.style.display = "block"; 
+    main_side_nav_small.style.display = "block"; 
+    social.style.display = "block";
     main.style.display = "block";
     header.style.display = "block";
     footer.style.display = "block";
-    main_side_nav.style.display = "flex"; 
-    social.style.display = "block";
+    
 }
 
 
