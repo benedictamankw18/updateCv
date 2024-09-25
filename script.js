@@ -245,6 +245,8 @@ document.getElementsByClassName("main-side-nav")[0].addEventListener("mouseout",
   
 });
 
+if(windowWidth >= 769 && windowWidth <= 1024){
+
 function getOption() {
   let obj = document.getElementById("PRO-LANG");
   let option = obj.options[obj.selectedIndex].text;
@@ -261,7 +263,7 @@ function getOption() {
 
   } else if(option === "JAVA"){
     let java =  document.getElementsByClassName("java");   
-    main.style.height = `${6800 - 2400}px`;
+    main.style.height = `${6800 - 1500}px`;
 
     for(let i=0; i < java.length; i++){
       java[i].style.display = "block";
@@ -306,7 +308,7 @@ function getOption() {
     
   } else if(option === "C++"){
     let java =  document.getElementsByClassName("java");
-    main.style.height = `${6800 - 2400}px`;   
+    main.style.height = `${6800 - 1500}px`;   
     for(let i=0; i < java.length; i++){
       java[i].style.display = "none";
     } 
@@ -349,7 +351,7 @@ function getOption() {
         
   } else if(option === "PYTHON"){
     let java =  document.getElementsByClassName("java");   
-    main.style.height = `${6800 - 2400}px`;
+    main.style.height = `${6800 - 1500}px`;
 
     for(let i=0; i < java.length; i++){
       java[i].style.display = "none";
@@ -404,7 +406,7 @@ function getOption() {
 
   } else if(option === "WEBSITE DESIGN"){
     let java =  document.getElementsByClassName("java"); 
-    main.style.height = `${6800 - 2400}px`;
+    main.style.height = `${6800 - 1500}px`;
   
     for(let i=0; i < java.length; i++){
       java[i].style.display = "none";
@@ -460,7 +462,7 @@ function getOption() {
 
   } else if(option === "MYSQL"){
     let java =  document.getElementsByClassName("java"); 
-    main.style.height = `${6800 - 2400}px`;
+    main.style.height = `${6800 - 1500}px`;
   
     for(let i=0; i < java.length; i++){
       java[i].style.display = "none";
@@ -516,7 +518,7 @@ function getOption() {
     
   } else if(option === "JAVASCRIPT"){
     let java =  document.getElementsByClassName("java"); 
-    main.style.height = `${6800 - 2400}px`;
+    main.style.height = `${6800 - 1500}px`;
   
     for(let i=0; i < java.length; i++){
       java[i].style.display = "none";
@@ -572,7 +574,7 @@ function getOption() {
     
   } else if(option === "CYBER SECURITY"){
     let java =  document.getElementsByClassName("java");   
-    main.style.height = `${6800 - 2400}px`;
+    main.style.height = `${6800 - 1500}px`;
 
     for(let i=0; i < java.length; i++){
       java[i].style.display = "none";
@@ -628,7 +630,7 @@ function getOption() {
     
   } else if(option === "ETHICAL HACKING"){
     let java =  document.getElementsByClassName("java"); 
-    main.style.height = `${6800 - 2400}px`;
+    main.style.height = `${6800 - 1500}px`;
   
     for(let i=0; i < java.length; i++){
       java[i].style.display = "none";
@@ -684,7 +686,7 @@ function getOption() {
     
   } else if(option === "NETWORKING"){
     let java =  document.getElementsByClassName("java");   
-    main.style.height = `${6800 - 2400}px`;
+    main.style.height = `${6800 - 1500}px`;
 
     for(let i=0; i < java.length; i++){
       java[i].style.display = "none";
@@ -740,7 +742,7 @@ function getOption() {
       
   } else if(option === "VISUAL BASIC"){
     let java =  document.getElementsByClassName("java");   
-    main.style.height = `${6800 - 2400}px`;
+    main.style.height = `${6800 - 1500}px`;
 
     for(let i=0; i < java.length; i++){
       java[i].style.display = "none";
@@ -797,6 +799,2236 @@ function getOption() {
 
     console.log("how possible")
   }
+  
+}
+
+} else if(windowWidth >=481  && windowWidth <= 768){
+
+  function getOption() {
+    let obj = document.getElementById("PRO-LANG");
+    let option = obj.options[obj.selectedIndex].text;
+    
+    if(option === "All"){
+      let all =  document.getElementsByClassName("project-veiw-card");
+      main.style.height = `${15300}px`;
+  
+      for(let i=0; i < all.length; i++){
+        all[i].style.display = "block";
+      }
+  
+        console.log(all);
+  
+    } else if(option === "JAVA"){
+      let java =  document.getElementsByClassName("java");   
+      main.style.height = `${15300 - 8500}px`;
+  
+      for(let i=0; i < java.length; i++){
+        java[i].style.display = "block";
+      } 
+      let cPP =  document.getElementsByClassName("c-plus-plus"); 
+      for(let i=0; i < cPP.length; i++){
+        cPP[i].style.display = "none";
+      }   
+      let python =  document.getElementsByClassName("python");   
+      for(let i=0; i < python.length; i++){
+        python[i].style.display = "none";
+      } 
+      let website =  document.getElementsByClassName("website");  
+      for(let i=0; i < website.length; i++){
+        website[i].style.display = "none";
+      }  
+      let mysql =  document.getElementsByClassName("mysql");   
+      for(let i=0; i < mysql.length; i++){
+        mysql[i].style.display = "none";
+      } 
+      let javascript =  document.getElementsByClassName("javascript"); 
+      for(let i=0; i < javascript.length; i++){
+        javascript[i].style.display = "none";
+      }   
+      let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+      for(let i=0; i < cyberSecurity.length; i++){
+        cyberSecurity[i].style.display = "none";
+      }  
+      let ethical =  document.getElementsByClassName("ethical-hacking");    
+      for(let i=0; i < ethical.length; i++){
+        ethical[i].style.display = "none";
+      }
+      let networking =  document.getElementsByClassName("networking");   
+      for(let i=0; i < networking.length; i++){
+        networking[i].style.display = "none";
+         
+      } 
+      let visual =  document.getElementsByClassName("visual-basic");    
+      for(let i=0; i < visual.length; i++){
+        visual[i].style.display = "none";
+      }
+      
+    } else if(option === "C++"){
+      let java =  document.getElementsByClassName("java");
+      main.style.height = `${15300 - 8500}px`;   
+      for(let i=0; i < java.length; i++){
+        java[i].style.display = "none";
+      } 
+      let cPP =  document.getElementsByClassName("c-plus-plus"); 
+      for(let i=0; i < cPP.length; i++){
+        cPP[i].style.display = "block";
+      }   
+      let python =  document.getElementsByClassName("python");   
+      for(let i=0; i < python.length; i++){
+        python[i].style.display = "none";
+      } 
+      let website =  document.getElementsByClassName("website");  
+      for(let i=0; i < website.length; i++){
+        website[i].style.display = "none";
+      }  
+      let mysql =  document.getElementsByClassName("mysql");   
+      for(let i=0; i < mysql.length; i++){
+        mysql[i].style.display = "none";
+      } 
+      let javascript =  document.getElementsByClassName("javascript"); 
+      for(let i=0; i < javascript.length; i++){
+        javascript[i].style.display = "none";
+      }   
+      let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+      for(let i=0; i < cyberSecurity.length; i++){
+        cyberSecurity[i].style.display = "none";
+      }  
+      let ethical =  document.getElementsByClassName("ethical-hacking");    
+      for(let i=0; i < ethical.length; i++){
+        ethical[i].style.display = "none";
+      }
+      let networking =  document.getElementsByClassName("networking");   
+      for(let i=0; i < networking.length; i++){
+        networking[i].style.display = "none";
+      } 
+      let visual =  document.getElementsByClassName("visual-basic");    
+      for(let i=0; i < visual.length; i++){
+        visual[i].style.display = "none";
+      }
+          
+    } else if(option === "PYTHON"){
+      let java =  document.getElementsByClassName("java");   
+      main.style.height = `${15300 - 8500}px`;
+  
+      for(let i=0; i < java.length; i++){
+        java[i].style.display = "none";
+      } 
+      let cPP =  document.getElementsByClassName("c-plus-plus"); 
+      for(let i=0; i < cPP.length; i++){
+        cPP[i].style.display = "none";
+         
+      }   
+      let python =  document.getElementsByClassName("python");   
+      for(let i=0; i < python.length; i++){
+        python[i].style.display = "block";
+         
+      } 
+      let website =  document.getElementsByClassName("website");  
+      for(let i=0; i < website.length; i++){
+        website[i].style.display = "none";
+         
+      }  
+      let mysql =  document.getElementsByClassName("mysql");   
+      for(let i=0; i < mysql.length; i++){
+        mysql[i].style.display = "none";
+         
+      } 
+      let javascript =  document.getElementsByClassName("javascript"); 
+      for(let i=0; i < javascript.length; i++){
+        javascript[i].style.display = "none";
+         
+      }   
+      let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+      for(let i=0; i < cyberSecurity.length; i++){
+        cyberSecurity[i].style.display = "none";
+         
+      }  
+      let ethical =  document.getElementsByClassName("ethical-hacking");    
+      for(let i=0; i < ethical.length; i++){
+        ethical[i].style.display = "none";
+         
+      }
+      let networking =  document.getElementsByClassName("networking");   
+      for(let i=0; i < networking.length; i++){
+        networking[i].style.display = "none";
+         
+      } 
+      let visual =  document.getElementsByClassName("visual-basic");    
+      for(let i=0; i < visual.length; i++){
+        visual[i].style.display = "none";
+         
+      }
+      
+         
+  
+    } else if(option === "WEBSITE DESIGN"){
+      let java =  document.getElementsByClassName("java"); 
+      main.style.height = `${15300 - 7800}px`;
+    
+      for(let i=0; i < java.length; i++){
+        java[i].style.display = "none";
+         
+      } 
+      let cPP =  document.getElementsByClassName("c-plus-plus"); 
+      for(let i=0; i < cPP.length; i++){
+        cPP[i].style.display = "none";
+         
+      }   
+      let python =  document.getElementsByClassName("python");   
+      for(let i=0; i < python.length; i++){
+        python[i].style.display = "none";
+         
+      } 
+      let website =  document.getElementsByClassName("website");  
+      for(let i=0; i < website.length; i++){
+        website[i].style.display = "block";
+         
+      }  
+      let mysql =  document.getElementsByClassName("mysql");   
+      for(let i=0; i < mysql.length; i++){
+        mysql[i].style.display = "none";
+         
+      } 
+      let javascript =  document.getElementsByClassName("javascript"); 
+      for(let i=0; i < javascript.length; i++){
+        javascript[i].style.display = "none";
+         
+      }   
+      let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+      for(let i=0; i < cyberSecurity.length; i++){
+        cyberSecurity[i].style.display = "none";
+         
+      }  
+      let ethical =  document.getElementsByClassName("ethical-hacking");    
+      for(let i=0; i < ethical.length; i++){
+        ethical[i].style.display = "none";
+         
+      }
+      let networking =  document.getElementsByClassName("networking");   
+      for(let i=0; i < networking.length; i++){
+        networking[i].style.display = "none";
+         
+      } 
+      let visual =  document.getElementsByClassName("visual-basic");    
+      for(let i=0; i < visual.length; i++){
+        visual[i].style.display = "none";
+         
+      }
+      
+         
+  
+    } else if(option === "MYSQL"){
+      let java =  document.getElementsByClassName("java"); 
+      main.style.height = `${15300 - 7500}px`;
+    
+      for(let i=0; i < java.length; i++){
+        java[i].style.display = "none";
+         
+      } 
+      let cPP =  document.getElementsByClassName("c-plus-plus"); 
+      for(let i=0; i < cPP.length; i++){
+        cPP[i].style.display = "none";
+         
+      }   
+      let python =  document.getElementsByClassName("python");   
+      for(let i=0; i < python.length; i++){
+        python[i].style.display = "none";
+         
+      } 
+      let website =  document.getElementsByClassName("website");  
+      for(let i=0; i < website.length; i++){
+        website[i].style.display = "none";
+         
+      }  
+      let mysql =  document.getElementsByClassName("mysql");   
+      for(let i=0; i < mysql.length; i++){
+        mysql[i].style.display = "block";
+         
+      } 
+      let javascript =  document.getElementsByClassName("javascript"); 
+      for(let i=0; i < javascript.length; i++){
+        javascript[i].style.display = "none";
+         
+      }   
+      let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+      for(let i=0; i < cyberSecurity.length; i++){
+        cyberSecurity[i].style.display = "none";
+         
+      }  
+      let ethical =  document.getElementsByClassName("ethical-hacking");    
+      for(let i=0; i < ethical.length; i++){
+        ethical[i].style.display = "none";
+         
+      }
+      let networking =  document.getElementsByClassName("networking");   
+      for(let i=0; i < networking.length; i++){
+        networking[i].style.display = "none";
+         
+      } 
+      let visual =  document.getElementsByClassName("visual-basic");    
+      for(let i=0; i < visual.length; i++){
+        visual[i].style.display = "none";
+         
+      }
+      
+         
+      
+    } else if(option === "JAVASCRIPT"){
+      let java =  document.getElementsByClassName("java"); 
+      main.style.height = `${15300 - 8500}px`;
+    
+      for(let i=0; i < java.length; i++){
+        java[i].style.display = "none";
+         
+      } 
+      let cPP =  document.getElementsByClassName("c-plus-plus"); 
+      for(let i=0; i < cPP.length; i++){
+        cPP[i].style.display = "none";
+         
+      }   
+      let python =  document.getElementsByClassName("python");   
+      for(let i=0; i < python.length; i++){
+        python[i].style.display = "none";
+         
+      } 
+      let website =  document.getElementsByClassName("website");  
+      for(let i=0; i < website.length; i++){
+        website[i].style.display = "none";
+         
+      }  
+      let mysql =  document.getElementsByClassName("mysql");   
+      for(let i=0; i < mysql.length; i++){
+        mysql[i].style.display = "none";
+         
+      } 
+      let javascript =  document.getElementsByClassName("javascript"); 
+      for(let i=0; i < javascript.length; i++){
+        javascript[i].style.display = "block";
+         
+      }   
+      let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+      for(let i=0; i < cyberSecurity.length; i++){
+        cyberSecurity[i].style.display = "none";
+         
+      }  
+      let ethical =  document.getElementsByClassName("ethical-hacking");    
+      for(let i=0; i < ethical.length; i++){
+        ethical[i].style.display = "none";
+         
+      }
+      let networking =  document.getElementsByClassName("networking");   
+      for(let i=0; i < networking.length; i++){
+        networking[i].style.display = "none";
+         
+      } 
+      let visual =  document.getElementsByClassName("visual-basic");    
+      for(let i=0; i < visual.length; i++){
+        visual[i].style.display = "none";
+         
+      }
+      
+         
+      
+    } else if(option === "CYBER SECURITY"){
+      let java =  document.getElementsByClassName("java");   
+      main.style.height = `${15300 - 8500}px`;
+  
+      for(let i=0; i < java.length; i++){
+        java[i].style.display = "none";
+         
+      } 
+      let cPP =  document.getElementsByClassName("c-plus-plus"); 
+      for(let i=0; i < cPP.length; i++){
+        cPP[i].style.display = "none";
+         
+      }   
+      let python =  document.getElementsByClassName("python");   
+      for(let i=0; i < python.length; i++){
+        python[i].style.display = "none";
+         
+      } 
+      let website =  document.getElementsByClassName("website");  
+      for(let i=0; i < website.length; i++){
+        website[i].style.display = "none";
+         
+      }  
+      let mysql =  document.getElementsByClassName("mysql");   
+      for(let i=0; i < mysql.length; i++){
+        mysql[i].style.display = "none";
+         
+      } 
+      let javascript =  document.getElementsByClassName("javascript"); 
+      for(let i=0; i < javascript.length; i++){
+        javascript[i].style.display = "none";
+         
+      }   
+      let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+      for(let i=0; i < cyberSecurity.length; i++){
+        cyberSecurity[i].style.display = "block";
+         
+      }  
+      let ethical =  document.getElementsByClassName("ethical-hacking");    
+      for(let i=0; i < ethical.length; i++){
+        ethical[i].style.display = "none";
+         
+      }
+      let networking =  document.getElementsByClassName("networking");   
+      for(let i=0; i < networking.length; i++){
+        networking[i].style.display = "none";
+         
+      } 
+      let visual =  document.getElementsByClassName("visual-basic");    
+      for(let i=0; i < visual.length; i++){
+        visual[i].style.display = "none";
+         
+      }
+      
+         
+      
+    } else if(option === "ETHICAL HACKING"){
+      let java =  document.getElementsByClassName("java"); 
+      main.style.height = `${15300 - 8500}px`;
+    
+      for(let i=0; i < java.length; i++){
+        java[i].style.display = "none";
+         
+      } 
+      let cPP =  document.getElementsByClassName("c-plus-plus"); 
+      for(let i=0; i < cPP.length; i++){
+        cPP[i].style.display = "none";
+         
+      }   
+      let python =  document.getElementsByClassName("python");   
+      for(let i=0; i < python.length; i++){
+        python[i].style.display = "none";
+         
+      } 
+      let website =  document.getElementsByClassName("website");  
+      for(let i=0; i < website.length; i++){
+        website[i].style.display = "none";
+         
+      }  
+      let mysql =  document.getElementsByClassName("mysql");   
+      for(let i=0; i < mysql.length; i++){
+        mysql[i].style.display = "none";
+         
+      } 
+      let javascript =  document.getElementsByClassName("javascript"); 
+      for(let i=0; i < javascript.length; i++){
+        javascript[i].style.display = "none";
+         
+      }   
+      let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+      for(let i=0; i < cyberSecurity.length; i++){
+        cyberSecurity[i].style.display = "none";
+         
+      }  
+      let ethical =  document.getElementsByClassName("ethical-hacking");    
+      for(let i=0; i < ethical.length; i++){
+        ethical[i].style.display = "block";
+         
+      }
+      let networking =  document.getElementsByClassName("networking");   
+      for(let i=0; i < networking.length; i++){
+        networking[i].style.display = "none";
+         
+      } 
+      let visual =  document.getElementsByClassName("visual-basic");    
+      for(let i=0; i < visual.length; i++){
+        visual[i].style.display = "none";
+         
+      }
+      
+         
+      
+    } else if(option === "NETWORKING"){
+      let java =  document.getElementsByClassName("java");   
+      main.style.height = `${15300 - 8500}px`;
+  
+      for(let i=0; i < java.length; i++){
+        java[i].style.display = "none";
+         
+      } 
+      let cPP =  document.getElementsByClassName("c-plus-plus"); 
+      for(let i=0; i < cPP.length; i++){
+        cPP[i].style.display = "none";
+         
+      }   
+      let python =  document.getElementsByClassName("python");   
+      for(let i=0; i < python.length; i++){
+        python[i].style.display = "none";
+         
+      } 
+      let website =  document.getElementsByClassName("website");  
+      for(let i=0; i < website.length; i++){
+        website[i].style.display = "none";
+         
+      }  
+      let mysql =  document.getElementsByClassName("mysql");   
+      for(let i=0; i < mysql.length; i++){
+        mysql[i].style.display = "none";
+         
+      } 
+      let javascript =  document.getElementsByClassName("javascript"); 
+      for(let i=0; i < javascript.length; i++){
+        javascript[i].style.display = "none";
+         
+      }   
+      let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+      for(let i=0; i < cyberSecurity.length; i++){
+        cyberSecurity[i].style.display = "none";
+         
+      }  
+      let ethical =  document.getElementsByClassName("ethical-hacking");    
+      for(let i=0; i < ethical.length; i++){
+        ethical[i].style.display = "none";
+         
+      }
+      let networking =  document.getElementsByClassName("networking");   
+      for(let i=0; i < networking.length; i++){
+        networking[i].style.display = "block";
+         
+      } 
+      let visual =  document.getElementsByClassName("visual-basic");    
+      for(let i=0; i < visual.length; i++){
+        visual[i].style.display = "none";
+         
+      }
+      
+         
+        
+    } else if(option === "VISUAL BASIC"){
+      let java =  document.getElementsByClassName("java");   
+      main.style.height = `${15300 - 7300}px`;
+  
+      for(let i=0; i < java.length; i++){
+        java[i].style.display = "none";
+         
+      } 
+      let cPP =  document.getElementsByClassName("c-plus-plus"); 
+      for(let i=0; i < cPP.length; i++){
+        cPP[i].style.display = "none";
+         
+      }   
+      let python =  document.getElementsByClassName("python");   
+      for(let i=0; i < python.length; i++){
+        python[i].style.display = "none";
+         
+      } 
+      let website =  document.getElementsByClassName("website");  
+      for(let i=0; i < website.length; i++){
+        website[i].style.display = "none";
+         
+      }  
+      let mysql =  document.getElementsByClassName("mysql");   
+      for(let i=0; i < mysql.length; i++){
+        mysql[i].style.display = "none";
+         
+      } 
+      let javascript =  document.getElementsByClassName("javascript"); 
+      for(let i=0; i < javascript.length; i++){
+        javascript[i].style.display = "none";
+         
+      }   
+      let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+      for(let i=0; i < cyberSecurity.length; i++){
+        cyberSecurity[i].style.display = "none";
+         
+      }  
+      let ethical =  document.getElementsByClassName("ethical-hacking");    
+      for(let i=0; i < ethical.length; i++){
+        ethical[i].style.display = "none";
+         
+      }
+      let networking =  document.getElementsByClassName("networking");   
+      for(let i=0; i < networking.length; i++){
+        networking[i].style.display = "none";
+         
+      } 
+      let visual =  document.getElementsByClassName("visual-basic");    
+      for(let i=0; i < visual.length; i++){
+        visual[i].style.display = "block";
+         
+      }
+      
+    } else{
+      main.style.height = `${15300 - 3000}px`;
+  
+      console.log("how possible")
+    }
+    
+  }
+  
+}else if(windowWidth >= 320 && windowWidth <= 480){
+
+  
+function getOption() {
+  let obj = document.getElementById("PRO-LANG");
+  let option = obj.options[obj.selectedIndex].text;
+  
+  if(option === "All"){
+    let all =  document.getElementsByClassName("project-veiw-card");
+    main.style.height = `${15300}px`;
+
+    for(let i=0; i < all.length; i++){
+      all[i].style.display = "block";
+    }
+
+      console.log(all);
+
+  } else if(option === "JAVA"){
+    let java =  document.getElementsByClassName("java");   
+    main.style.height = `${15300 - 9900}px`;
+
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "block";
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+    }
+    
+  } else if(option === "C++"){
+    let java =  document.getElementsByClassName("java");
+    main.style.height = `${15300 - 9700}px`;   
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "block";
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+    }
+        
+  } else if(option === "PYTHON"){
+    let java =  document.getElementsByClassName("java");   
+    main.style.height = `${15300 - 9900}px`;
+
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "block";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+
+  } else if(option === "WEBSITE DESIGN"){
+    let java =  document.getElementsByClassName("java"); 
+    main.style.height = `${15300 - 8900}px`;
+  
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "block";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+
+  } else if(option === "MYSQL"){
+    let java =  document.getElementsByClassName("java"); 
+    main.style.height = `${15300 - 8300}px`;
+  
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "block";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+    
+  } else if(option === "JAVASCRIPT"){
+    let java =  document.getElementsByClassName("java"); 
+    main.style.height = `${15300 - 9900}px`;
+  
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "block";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+    
+  } else if(option === "CYBER SECURITY"){
+    let java =  document.getElementsByClassName("java");   
+    main.style.height = `${15300 - 9900}px`;
+
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "block";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+    
+  } else if(option === "ETHICAL HACKING"){
+    let java =  document.getElementsByClassName("java"); 
+    main.style.height = `${15300 - 9900}px`;
+  
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "block";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+    
+  } else if(option === "NETWORKING"){
+    let java =  document.getElementsByClassName("java");   
+    main.style.height = `${15300 - 9900}px`;
+
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "block";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+      
+  } else if(option === "VISUAL BASIC"){
+    let java =  document.getElementsByClassName("java");   
+    main.style.height = `${15300 - 8000}px`;
+
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "block";
+       
+    }
+    
+  } else{
+    main.style.height = `${15300 - 3000}px`;
+
+    console.log("how possible")
+  }
+  
+}
+
+} else if(windowWidth >= 0 && windowWidth <= 319){
+  
+function getOption() {
+  let obj = document.getElementById("PRO-LANG");
+  let option = obj.options[obj.selectedIndex].text;
+  
+  if(option === "All"){
+    let all =  document.getElementsByClassName("project-veiw-card");
+    main.style.height = `${6800}px`;
+
+    for(let i=0; i < all.length; i++){
+      all[i].style.display = "block";
+    }
+
+      console.log(all);
+
+  } else if(option === "JAVA"){
+    let java =  document.getElementsByClassName("java");   
+    main.style.height = `${6800 - 1500}px`;
+
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "block";
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+    }
+    
+  } else if(option === "C++"){
+    let java =  document.getElementsByClassName("java");
+    main.style.height = `${6800 - 1500}px`;   
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "block";
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+    }
+        
+  } else if(option === "PYTHON"){
+    let java =  document.getElementsByClassName("java");   
+    main.style.height = `${6800 - 1500}px`;
+
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "block";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+
+  } else if(option === "WEBSITE DESIGN"){
+    let java =  document.getElementsByClassName("java"); 
+    main.style.height = `${6800 - 1500}px`;
+  
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "block";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+
+  } else if(option === "MYSQL"){
+    let java =  document.getElementsByClassName("java"); 
+    main.style.height = `${6800 - 1500}px`;
+  
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "block";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+    
+  } else if(option === "JAVASCRIPT"){
+    let java =  document.getElementsByClassName("java"); 
+    main.style.height = `${6800 - 1500}px`;
+  
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "block";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+    
+  } else if(option === "CYBER SECURITY"){
+    let java =  document.getElementsByClassName("java");   
+    main.style.height = `${6800 - 1500}px`;
+
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "block";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+    
+  } else if(option === "ETHICAL HACKING"){
+    let java =  document.getElementsByClassName("java"); 
+    main.style.height = `${6800 - 1500}px`;
+  
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "block";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+    
+  } else if(option === "NETWORKING"){
+    let java =  document.getElementsByClassName("java");   
+    main.style.height = `${6800 - 1500}px`;
+
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "block";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "none";
+       
+    }
+    
+       
+      
+  } else if(option === "VISUAL BASIC"){
+    let java =  document.getElementsByClassName("java");   
+    main.style.height = `${6800 - 1500}px`;
+
+    for(let i=0; i < java.length; i++){
+      java[i].style.display = "none";
+       
+    } 
+    let cPP =  document.getElementsByClassName("c-plus-plus"); 
+    for(let i=0; i < cPP.length; i++){
+      cPP[i].style.display = "none";
+       
+    }   
+    let python =  document.getElementsByClassName("python");   
+    for(let i=0; i < python.length; i++){
+      python[i].style.display = "none";
+       
+    } 
+    let website =  document.getElementsByClassName("website");  
+    for(let i=0; i < website.length; i++){
+      website[i].style.display = "none";
+       
+    }  
+    let mysql =  document.getElementsByClassName("mysql");   
+    for(let i=0; i < mysql.length; i++){
+      mysql[i].style.display = "none";
+       
+    } 
+    let javascript =  document.getElementsByClassName("javascript"); 
+    for(let i=0; i < javascript.length; i++){
+      javascript[i].style.display = "none";
+       
+    }   
+    let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+    for(let i=0; i < cyberSecurity.length; i++){
+      cyberSecurity[i].style.display = "none";
+       
+    }  
+    let ethical =  document.getElementsByClassName("ethical-hacking");    
+    for(let i=0; i < ethical.length; i++){
+      ethical[i].style.display = "none";
+       
+    }
+    let networking =  document.getElementsByClassName("networking");   
+    for(let i=0; i < networking.length; i++){
+      networking[i].style.display = "none";
+       
+    } 
+    let visual =  document.getElementsByClassName("visual-basic");    
+    for(let i=0; i < visual.length; i++){
+      visual[i].style.display = "block";
+       
+    }
+    
+  } else{
+    main.style.height = `${6800 - 3000}px`;
+
+    console.log("how possible")
+  }
+  
+}
+
+} else{
+//   function getOption() {
+//     let obj = document.getElementById("PRO-LANG");
+//     let option = obj.options[obj.selectedIndex].text;
+    
+//     if(option === "All"){
+//       let all =  document.getElementsByClassName("project-veiw-card");
+//       main.style.height = `${6800}px`;
+  
+//       for(let i=0; i < all.length; i++){
+//         all[i].style.display = "block";
+//       }
+  
+//         console.log(all);
+  
+//     } else if(option === "JAVA"){
+//       let java =  document.getElementsByClassName("java");   
+//       main.style.height = `${6800 - 1500}px`;
+  
+//       for(let i=0; i < java.length; i++){
+//         java[i].style.display = "block";
+//       } 
+//       let cPP =  document.getElementsByClassName("c-plus-plus"); 
+//       for(let i=0; i < cPP.length; i++){
+//         cPP[i].style.display = "none";
+//       }   
+//       let python =  document.getElementsByClassName("python");   
+//       for(let i=0; i < python.length; i++){
+//         python[i].style.display = "none";
+//       } 
+//       let website =  document.getElementsByClassName("website");  
+//       for(let i=0; i < website.length; i++){
+//         website[i].style.display = "none";
+//       }  
+//       let mysql =  document.getElementsByClassName("mysql");   
+//       for(let i=0; i < mysql.length; i++){
+//         mysql[i].style.display = "none";
+//       } 
+//       let javascript =  document.getElementsByClassName("javascript"); 
+//       for(let i=0; i < javascript.length; i++){
+//         javascript[i].style.display = "none";
+//       }   
+//       let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+//       for(let i=0; i < cyberSecurity.length; i++){
+//         cyberSecurity[i].style.display = "none";
+//       }  
+//       let ethical =  document.getElementsByClassName("ethical-hacking");    
+//       for(let i=0; i < ethical.length; i++){
+//         ethical[i].style.display = "none";
+//       }
+//       let networking =  document.getElementsByClassName("networking");   
+//       for(let i=0; i < networking.length; i++){
+//         networking[i].style.display = "none";
+         
+//       } 
+//       let visual =  document.getElementsByClassName("visual-basic");    
+//       for(let i=0; i < visual.length; i++){
+//         visual[i].style.display = "none";
+//       }
+      
+//     } else if(option === "C++"){
+//       let java =  document.getElementsByClassName("java");
+//       main.style.height = `${6800 - 1500}px`;   
+//       for(let i=0; i < java.length; i++){
+//         java[i].style.display = "none";
+//       } 
+//       let cPP =  document.getElementsByClassName("c-plus-plus"); 
+//       for(let i=0; i < cPP.length; i++){
+//         cPP[i].style.display = "block";
+//       }   
+//       let python =  document.getElementsByClassName("python");   
+//       for(let i=0; i < python.length; i++){
+//         python[i].style.display = "none";
+//       } 
+//       let website =  document.getElementsByClassName("website");  
+//       for(let i=0; i < website.length; i++){
+//         website[i].style.display = "none";
+//       }  
+//       let mysql =  document.getElementsByClassName("mysql");   
+//       for(let i=0; i < mysql.length; i++){
+//         mysql[i].style.display = "none";
+//       } 
+//       let javascript =  document.getElementsByClassName("javascript"); 
+//       for(let i=0; i < javascript.length; i++){
+//         javascript[i].style.display = "none";
+//       }   
+//       let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+//       for(let i=0; i < cyberSecurity.length; i++){
+//         cyberSecurity[i].style.display = "none";
+//       }  
+//       let ethical =  document.getElementsByClassName("ethical-hacking");    
+//       for(let i=0; i < ethical.length; i++){
+//         ethical[i].style.display = "none";
+//       }
+//       let networking =  document.getElementsByClassName("networking");   
+//       for(let i=0; i < networking.length; i++){
+//         networking[i].style.display = "none";
+//       } 
+//       let visual =  document.getElementsByClassName("visual-basic");    
+//       for(let i=0; i < visual.length; i++){
+//         visual[i].style.display = "none";
+//       }
+          
+//     } else if(option === "PYTHON"){
+//       let java =  document.getElementsByClassName("java");   
+//       main.style.height = `${6800 - 1500}px`;
+  
+//       for(let i=0; i < java.length; i++){
+//         java[i].style.display = "none";
+//       } 
+//       let cPP =  document.getElementsByClassName("c-plus-plus"); 
+//       for(let i=0; i < cPP.length; i++){
+//         cPP[i].style.display = "none";
+         
+//       }   
+//       let python =  document.getElementsByClassName("python");   
+//       for(let i=0; i < python.length; i++){
+//         python[i].style.display = "block";
+         
+//       } 
+//       let website =  document.getElementsByClassName("website");  
+//       for(let i=0; i < website.length; i++){
+//         website[i].style.display = "none";
+         
+//       }  
+//       let mysql =  document.getElementsByClassName("mysql");   
+//       for(let i=0; i < mysql.length; i++){
+//         mysql[i].style.display = "none";
+         
+//       } 
+//       let javascript =  document.getElementsByClassName("javascript"); 
+//       for(let i=0; i < javascript.length; i++){
+//         javascript[i].style.display = "none";
+         
+//       }   
+//       let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+//       for(let i=0; i < cyberSecurity.length; i++){
+//         cyberSecurity[i].style.display = "none";
+         
+//       }  
+//       let ethical =  document.getElementsByClassName("ethical-hacking");    
+//       for(let i=0; i < ethical.length; i++){
+//         ethical[i].style.display = "none";
+         
+//       }
+//       let networking =  document.getElementsByClassName("networking");   
+//       for(let i=0; i < networking.length; i++){
+//         networking[i].style.display = "none";
+         
+//       } 
+//       let visual =  document.getElementsByClassName("visual-basic");    
+//       for(let i=0; i < visual.length; i++){
+//         visual[i].style.display = "none";
+         
+//       }
+      
+         
+  
+//     } else if(option === "WEBSITE DESIGN"){
+//       let java =  document.getElementsByClassName("java"); 
+//       main.style.height = `${6800 - 1500}px`;
+    
+//       for(let i=0; i < java.length; i++){
+//         java[i].style.display = "none";
+         
+//       } 
+//       let cPP =  document.getElementsByClassName("c-plus-plus"); 
+//       for(let i=0; i < cPP.length; i++){
+//         cPP[i].style.display = "none";
+         
+//       }   
+//       let python =  document.getElementsByClassName("python");   
+//       for(let i=0; i < python.length; i++){
+//         python[i].style.display = "none";
+         
+//       } 
+//       let website =  document.getElementsByClassName("website");  
+//       for(let i=0; i < website.length; i++){
+//         website[i].style.display = "block";
+         
+//       }  
+//       let mysql =  document.getElementsByClassName("mysql");   
+//       for(let i=0; i < mysql.length; i++){
+//         mysql[i].style.display = "none";
+         
+//       } 
+//       let javascript =  document.getElementsByClassName("javascript"); 
+//       for(let i=0; i < javascript.length; i++){
+//         javascript[i].style.display = "none";
+         
+//       }   
+//       let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+//       for(let i=0; i < cyberSecurity.length; i++){
+//         cyberSecurity[i].style.display = "none";
+         
+//       }  
+//       let ethical =  document.getElementsByClassName("ethical-hacking");    
+//       for(let i=0; i < ethical.length; i++){
+//         ethical[i].style.display = "none";
+         
+//       }
+//       let networking =  document.getElementsByClassName("networking");   
+//       for(let i=0; i < networking.length; i++){
+//         networking[i].style.display = "none";
+         
+//       } 
+//       let visual =  document.getElementsByClassName("visual-basic");    
+//       for(let i=0; i < visual.length; i++){
+//         visual[i].style.display = "none";
+         
+//       }
+      
+         
+  
+//     } else if(option === "MYSQL"){
+//       let java =  document.getElementsByClassName("java"); 
+//       main.style.height = `${6800 - 1500}px`;
+    
+//       for(let i=0; i < java.length; i++){
+//         java[i].style.display = "none";
+         
+//       } 
+//       let cPP =  document.getElementsByClassName("c-plus-plus"); 
+//       for(let i=0; i < cPP.length; i++){
+//         cPP[i].style.display = "none";
+         
+//       }   
+//       let python =  document.getElementsByClassName("python");   
+//       for(let i=0; i < python.length; i++){
+//         python[i].style.display = "none";
+         
+//       } 
+//       let website =  document.getElementsByClassName("website");  
+//       for(let i=0; i < website.length; i++){
+//         website[i].style.display = "none";
+         
+//       }  
+//       let mysql =  document.getElementsByClassName("mysql");   
+//       for(let i=0; i < mysql.length; i++){
+//         mysql[i].style.display = "block";
+         
+//       } 
+//       let javascript =  document.getElementsByClassName("javascript"); 
+//       for(let i=0; i < javascript.length; i++){
+//         javascript[i].style.display = "none";
+         
+//       }   
+//       let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+//       for(let i=0; i < cyberSecurity.length; i++){
+//         cyberSecurity[i].style.display = "none";
+         
+//       }  
+//       let ethical =  document.getElementsByClassName("ethical-hacking");    
+//       for(let i=0; i < ethical.length; i++){
+//         ethical[i].style.display = "none";
+         
+//       }
+//       let networking =  document.getElementsByClassName("networking");   
+//       for(let i=0; i < networking.length; i++){
+//         networking[i].style.display = "none";
+         
+//       } 
+//       let visual =  document.getElementsByClassName("visual-basic");    
+//       for(let i=0; i < visual.length; i++){
+//         visual[i].style.display = "none";
+         
+//       }
+      
+         
+      
+//     } else if(option === "JAVASCRIPT"){
+//       let java =  document.getElementsByClassName("java"); 
+//       main.style.height = `${6800 - 1500}px`;
+    
+//       for(let i=0; i < java.length; i++){
+//         java[i].style.display = "none";
+         
+//       } 
+//       let cPP =  document.getElementsByClassName("c-plus-plus"); 
+//       for(let i=0; i < cPP.length; i++){
+//         cPP[i].style.display = "none";
+         
+//       }   
+//       let python =  document.getElementsByClassName("python");   
+//       for(let i=0; i < python.length; i++){
+//         python[i].style.display = "none";
+         
+//       } 
+//       let website =  document.getElementsByClassName("website");  
+//       for(let i=0; i < website.length; i++){
+//         website[i].style.display = "none";
+         
+//       }  
+//       let mysql =  document.getElementsByClassName("mysql");   
+//       for(let i=0; i < mysql.length; i++){
+//         mysql[i].style.display = "none";
+         
+//       } 
+//       let javascript =  document.getElementsByClassName("javascript"); 
+//       for(let i=0; i < javascript.length; i++){
+//         javascript[i].style.display = "block";
+         
+//       }   
+//       let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+//       for(let i=0; i < cyberSecurity.length; i++){
+//         cyberSecurity[i].style.display = "none";
+         
+//       }  
+//       let ethical =  document.getElementsByClassName("ethical-hacking");    
+//       for(let i=0; i < ethical.length; i++){
+//         ethical[i].style.display = "none";
+         
+//       }
+//       let networking =  document.getElementsByClassName("networking");   
+//       for(let i=0; i < networking.length; i++){
+//         networking[i].style.display = "none";
+         
+//       } 
+//       let visual =  document.getElementsByClassName("visual-basic");    
+//       for(let i=0; i < visual.length; i++){
+//         visual[i].style.display = "none";
+         
+//       }
+      
+         
+      
+//     } else if(option === "CYBER SECURITY"){
+//       let java =  document.getElementsByClassName("java");   
+//       main.style.height = `${6800 - 1500}px`;
+  
+//       for(let i=0; i < java.length; i++){
+//         java[i].style.display = "none";
+         
+//       } 
+//       let cPP =  document.getElementsByClassName("c-plus-plus"); 
+//       for(let i=0; i < cPP.length; i++){
+//         cPP[i].style.display = "none";
+         
+//       }   
+//       let python =  document.getElementsByClassName("python");   
+//       for(let i=0; i < python.length; i++){
+//         python[i].style.display = "none";
+         
+//       } 
+//       let website =  document.getElementsByClassName("website");  
+//       for(let i=0; i < website.length; i++){
+//         website[i].style.display = "none";
+         
+//       }  
+//       let mysql =  document.getElementsByClassName("mysql");   
+//       for(let i=0; i < mysql.length; i++){
+//         mysql[i].style.display = "none";
+         
+//       } 
+//       let javascript =  document.getElementsByClassName("javascript"); 
+//       for(let i=0; i < javascript.length; i++){
+//         javascript[i].style.display = "none";
+         
+//       }   
+//       let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+//       for(let i=0; i < cyberSecurity.length; i++){
+//         cyberSecurity[i].style.display = "block";
+         
+//       }  
+//       let ethical =  document.getElementsByClassName("ethical-hacking");    
+//       for(let i=0; i < ethical.length; i++){
+//         ethical[i].style.display = "none";
+         
+//       }
+//       let networking =  document.getElementsByClassName("networking");   
+//       for(let i=0; i < networking.length; i++){
+//         networking[i].style.display = "none";
+         
+//       } 
+//       let visual =  document.getElementsByClassName("visual-basic");    
+//       for(let i=0; i < visual.length; i++){
+//         visual[i].style.display = "none";
+         
+//       }
+      
+         
+      
+//     } else if(option === "ETHICAL HACKING"){
+//       let java =  document.getElementsByClassName("java"); 
+//       main.style.height = `${6800 - 1500}px`;
+    
+//       for(let i=0; i < java.length; i++){
+//         java[i].style.display = "none";
+         
+//       } 
+//       let cPP =  document.getElementsByClassName("c-plus-plus"); 
+//       for(let i=0; i < cPP.length; i++){
+//         cPP[i].style.display = "none";
+         
+//       }   
+//       let python =  document.getElementsByClassName("python");   
+//       for(let i=0; i < python.length; i++){
+//         python[i].style.display = "none";
+         
+//       } 
+//       let website =  document.getElementsByClassName("website");  
+//       for(let i=0; i < website.length; i++){
+//         website[i].style.display = "none";
+         
+//       }  
+//       let mysql =  document.getElementsByClassName("mysql");   
+//       for(let i=0; i < mysql.length; i++){
+//         mysql[i].style.display = "none";
+         
+//       } 
+//       let javascript =  document.getElementsByClassName("javascript"); 
+//       for(let i=0; i < javascript.length; i++){
+//         javascript[i].style.display = "none";
+         
+//       }   
+//       let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+//       for(let i=0; i < cyberSecurity.length; i++){
+//         cyberSecurity[i].style.display = "none";
+         
+//       }  
+//       let ethical =  document.getElementsByClassName("ethical-hacking");    
+//       for(let i=0; i < ethical.length; i++){
+//         ethical[i].style.display = "block";
+         
+//       }
+//       let networking =  document.getElementsByClassName("networking");   
+//       for(let i=0; i < networking.length; i++){
+//         networking[i].style.display = "none";
+         
+//       } 
+//       let visual =  document.getElementsByClassName("visual-basic");    
+//       for(let i=0; i < visual.length; i++){
+//         visual[i].style.display = "none";
+         
+//       }
+      
+         
+      
+//     } else if(option === "NETWORKING"){
+//       let java =  document.getElementsByClassName("java");   
+//       main.style.height = `${6800 - 1500}px`;
+  
+//       for(let i=0; i < java.length; i++){
+//         java[i].style.display = "none";
+         
+//       } 
+//       let cPP =  document.getElementsByClassName("c-plus-plus"); 
+//       for(let i=0; i < cPP.length; i++){
+//         cPP[i].style.display = "none";
+         
+//       }   
+//       let python =  document.getElementsByClassName("python");   
+//       for(let i=0; i < python.length; i++){
+//         python[i].style.display = "none";
+         
+//       } 
+//       let website =  document.getElementsByClassName("website");  
+//       for(let i=0; i < website.length; i++){
+//         website[i].style.display = "none";
+         
+//       }  
+//       let mysql =  document.getElementsByClassName("mysql");   
+//       for(let i=0; i < mysql.length; i++){
+//         mysql[i].style.display = "none";
+         
+//       } 
+//       let javascript =  document.getElementsByClassName("javascript"); 
+//       for(let i=0; i < javascript.length; i++){
+//         javascript[i].style.display = "none";
+         
+//       }   
+//       let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+//       for(let i=0; i < cyberSecurity.length; i++){
+//         cyberSecurity[i].style.display = "none";
+         
+//       }  
+//       let ethical =  document.getElementsByClassName("ethical-hacking");    
+//       for(let i=0; i < ethical.length; i++){
+//         ethical[i].style.display = "none";
+         
+//       }
+//       let networking =  document.getElementsByClassName("networking");   
+//       for(let i=0; i < networking.length; i++){
+//         networking[i].style.display = "block";
+         
+//       } 
+//       let visual =  document.getElementsByClassName("visual-basic");    
+//       for(let i=0; i < visual.length; i++){
+//         visual[i].style.display = "none";
+         
+//       }
+      
+         
+        
+//     } else if(option === "VISUAL BASIC"){
+//       let java =  document.getElementsByClassName("java");   
+//       main.style.height = `${6800 - 1500}px`;
+  
+//       for(let i=0; i < java.length; i++){
+//         java[i].style.display = "none";
+         
+//       } 
+//       let cPP =  document.getElementsByClassName("c-plus-plus"); 
+//       for(let i=0; i < cPP.length; i++){
+//         cPP[i].style.display = "none";
+         
+//       }   
+//       let python =  document.getElementsByClassName("python");   
+//       for(let i=0; i < python.length; i++){
+//         python[i].style.display = "none";
+         
+//       } 
+//       let website =  document.getElementsByClassName("website");  
+//       for(let i=0; i < website.length; i++){
+//         website[i].style.display = "none";
+         
+//       }  
+//       let mysql =  document.getElementsByClassName("mysql");   
+//       for(let i=0; i < mysql.length; i++){
+//         mysql[i].style.display = "none";
+         
+//       } 
+//       let javascript =  document.getElementsByClassName("javascript"); 
+//       for(let i=0; i < javascript.length; i++){
+//         javascript[i].style.display = "none";
+         
+//       }   
+//       let cyberSecurity =  document.getElementsByClassName("cyberSecurity");  
+//       for(let i=0; i < cyberSecurity.length; i++){
+//         cyberSecurity[i].style.display = "none";
+         
+//       }  
+//       let ethical =  document.getElementsByClassName("ethical-hacking");    
+//       for(let i=0; i < ethical.length; i++){
+//         ethical[i].style.display = "none";
+         
+//       }
+//       let networking =  document.getElementsByClassName("networking");   
+//       for(let i=0; i < networking.length; i++){
+//         networking[i].style.display = "none";
+         
+//       } 
+//       let visual =  document.getElementsByClassName("visual-basic");    
+//       for(let i=0; i < visual.length; i++){
+//         visual[i].style.display = "block";
+         
+//       }
+      
+//     } else{
+//       main.style.height = `${6800 - 3000}px`;
+  
+//       console.log("how possible")
+//     }
+    
+//   }
   
 }
 

@@ -6,14 +6,25 @@ function displayContent() {
     const main_side_nav = document.getElementsByClassName("main-side-nav")[0]; 
     const main_side_nav_small = document.getElementsByClassName("main-side-nav-small")[0]; 
     const social = document.getElementsByClassName("social")[0]; 
-    
+    const warning = document.getElementsByClassName("warning")[0]; 
+    if(windowWidth <= 319){
+        main_side_nav.style.display = "none"; 
+    main_side_nav_small.style.display = "none"; 
+    social.style.display = "none";
+    main.style.display = "none";
+    header.style.display = "none";
+    footer.style.display = "none";
+    warning.style.display = "block";
+    }
+    else{
     main_side_nav.style.display = "block"; 
     main_side_nav_small.style.display = "block"; 
     social.style.display = "block";
     main.style.display = "block";
     header.style.display = "block";
+    // warning.style.display = "none";
     footer.style.display = "block";
-    
+}
 }
 
 
