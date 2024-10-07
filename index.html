@@ -170,8 +170,6 @@
 </div>
 </div>
 
-
-
 <div class="main-profile">
     <div class="profile-title">Profile</div>
     <p class="profile-text">
@@ -222,6 +220,9 @@
 </div>
 <div class="secondveiw">
 <div class="experience">
+    <div class="main-img hacking">
+        <img src="./progromming (3).jpeg" alt="">
+        </div>
     <div class="main-experience">
 <div class="title-experience">Experience</div>
 <div class="text-experience">
@@ -235,9 +236,6 @@
 
     </ul>
 </div>
-</div>
-<div class="main-img hacking">
-<img src="./progromming (3).jpeg" alt="">
 </div>
 </div>
 </div>
@@ -270,11 +268,7 @@
             <div class="available-title">Availability</div>
             <p class="available-content">I am available for immediate employment. 
                 I am willing to relocate for the right opportunity. &nbsp; 
-                <br><button style=" padding: 10px 20px;border-radius: 5px; border: 1px solid black;
-                margin: 5px 0px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-                font-size: 20px; font-weight: 700; background-color: #0011ff; color: whitesmoke;
-                box-shadow: 5px 5px 10px var(--boxShadowColor);">Contact</button></p>
-                
+                <br><button>Contact</button></p>
         </div>
         <div class="reference">
         <div class="reference-title">Reference</div>
@@ -286,7 +280,7 @@
                         <img src="./434961084_977293330419970_6737155629119857129_n (1).jpg" alt="">
                     </div>
                     <div class="ref-detail">MR. AKWASI AMANKWA</div>
-                    <div class="ref-contact">Contact</div>
+                    <a href="./contact-info.html"><button class="ref-contact" onclick="contact_info('Akwasi')">Contact</button></a>
                 </div>
 
                 <div class="card-ref">
@@ -294,7 +288,7 @@
                         <img src="./Screenshot_20240531-032416_WhatsAppBusiness.jpg" alt="">
                     </div>
                     <div class="ref-detail">MRS. FUASTINA BEENI</div>
-                    <div class="ref-contact">Contact</div>
+                    <a href="./contact-info.html"><button class="ref-contact" onclick="contact_info('Beeni')">Contact</button></a>
                 </div>
 
                 <div class="card-ref">
@@ -302,11 +296,12 @@
                         <img src="./progromming (4).jpeg" alt="">
                     </div>
                     <div class="ref-detail">FULL NAME</div>
-                    <div class="ref-contact">Contact</div>
+                    <a href="./contact-info.html"><button class="ref-contact" onclick="contact_info('Unknown')" >Contact</button></a>
                 </div>
         </div>
         </div>
         </div>
+
         <div class="main-project" id="PROJECT">
             <div class="project-title">Projects</div>
         <div class="categroy">
@@ -322,8 +317,6 @@
                 <option value="javascript">JAVASCRIPT</option>
                 <option value="cyberSecurity">CYBER SECURITY</option>
                 <option value="ethicalHacking">ETHICAL HACKING</option>
-                <!-- <option value="networking">NETWORKING</option> -->
-
             </select>
         </div>
         <div class="project-veiw ">
@@ -597,9 +590,7 @@
 
         </div>
     </div>
-</main>
-
-    
+</main> 
 </div>
         <div class="main-side-nav">
             <div class="side-nav">
@@ -635,7 +626,7 @@
                     </a>
                 </div>
                 <div class="contact-icon">
-                   <a herf="#">
+                   <a href="contact-info.html" target="_blank">
                         <i class="fa fa-phone"></i>
                         <span class="contact-text text-icon">CONTACT ME</span>
                    </a>
@@ -709,23 +700,18 @@
             <div class="side-nav-icon-small">
                 <a href="#">
                     <i class="fa fa-home"></i>
-                    <!-- <span class="home-small text-icon-small">HOME</span> -->
                 </a>
                 <a href="#SKILLS">
                     <i class="fa fa-hacker-news"></i>
-                    <!-- <span class="hacker-small text-icon-small">SKILLS</span> -->
                 </a>
                 <a href="#PROFILE">
                     <i class="fa fa-book"></i>
-                    <!-- <span class="book-small text-icon-small">PROFILE</span> -->
                 </a>
                 <a href="#PROJECT">
                     <i class="fa fa-folder"></i>
-                    <!-- <span class="folder-small text-icon-small">PROJECT</span> -->
                 </a>
-               <a herf="#">
+               <a href="./contact-info.html">
                     <i class="fa fa-phone"></i>
-                    <!-- <span class="contact-text-small text-icon-small">CONTACT ME</span> -->
                </a>
         </div>
          <div class="show-small" onclick="SmallNav()">
