@@ -179,48 +179,71 @@
 
     <div class="contactDetail" id="contactDetail">
         <a href="./index.html" target="_parent">
-        <div class="contactInfoClose" onclick="closeContact()"><i class="fa fa-close"></i>
+            <div class="contactInfoClose" onclick="closeContact()"><i class="fa fa-close"></i>
         </a>
     </div>
-        <h2 class="HeaderContact">Contact Information Of <name>{Me}</name></h2>
-        <hr>
-        <div class="contactDetailSingle">
-            <strong class="contactInfo">Name: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i class="fa fa-info"></i><person> Benedict Amankwa Osei </person></article>
-        </div>
-        <br>
-        <div class="contactDetailSingle">
-            <strong class="contactInfo">Email: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i class="fa fa-envelope-o"></i> <a href="mailto:" id="email">benedictamankwa18@gmil.com</a></article>
-        </div>
-        <br>
-        <div class="contactDetailSingle">
-            <strong class="contactInfo">Phone Number: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i class="fa fa-phone"></i> <a href="tel:+" id="phone">0504221593</a></article>
-        </div>
-        <br>
-        <div class="contactDetailSingle">
-            <strong class="contactInfo">Whatsapp: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i class="fa fa-whatsapp"></i> <a href="" id="whatsapp">Benedict_Amankwa</a></article>
-        </div>
-        <br>
-        <div class="contactDetailSingle">
-            <strong class="contactInfo">Telegram: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i class="fa fa-telegram"></i> <a href="" id="telegram">Benedict Amankwa Osei</a></article>
-        </div>
-        <br>
-        <div class="contactDetailSingle">
-            <strong class="contactInfo">Linkedin: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i class="fa fa-linkedin-square"></i> <a href="" id="linkedin">Benedict Amankwa Osei</a></article>
-        </div>
-        <br>
-        <div class="contactDetailSingle">
-            <strong class="contactInfo">Facebook: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i class="fa fa-facebook"></i> <a href="" id="facebook">Benedict Amankwa Osei</a></article>
-        </div>
-        <br>
-        <div class="contactDetailSingle">
-            <strong class="contactInfo">GitHub: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i class="fa fa-github"></i> <a href="" id="github">Benedict Amankwa Osei</a></article>
-        </div>
-        <br>
+    <h2 class="HeaderContact">Contact Information Of <name>{Me}</name>
+    </h2>
+    <hr>
+    <div class="contactDetailSingle">
+        <strong class="contactInfo">Name: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i
+                class="fa fa-info"></i>
+            <person></person>
+        </article>
+    </div>
+    <br>
+    <div class="contactDetailSingle">
+        <strong class="contactInfo">Email: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i
+                class="fa fa-envelope-o"></i> <a href="mailto:" id="email"></a></article>
+    </div>
+    <br>
+    <div class="contactDetailSingle">
+        <strong class="contactInfo">Phone Number: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i
+                class="fa fa-phone"></i> <a href="tel:+" id="phone"></a></article>
+    </div>
+    <br>
+    <div class="contactDetailSingle">
+        <strong class="contactInfo">Whatsapp: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i
+                class="fa fa-whatsapp"></i> <a href="" id="whatsapp"></a></article>
+    </div>
+    <br>
+    <div class="contactDetailSingle">
+        <strong class="contactInfo">Telegram: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i
+                class="fa fa-telegram"></i> <a href="" id="telegram"></a></article>
+    </div>
+    <br>
+    <div class="contactDetailSingle">
+        <strong class="contactInfo">Linkedin: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i
+                class="fa fa-linkedin-square"></i> <a href="" id="linkedin"></a></article>
+    </div>
+    <br>
+    <div class="contactDetailSingle">
+        <strong class="contactInfo">Facebook: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i
+                class="fa fa-facebook"></i> <a href="" id="facebook"></a></article>
+    </div>
+    <br>
+    <div class="contactDetailSingle">
+        <strong class="contactInfo">GitHub: </strong> &nbsp;&nbsp;&nbsp;<article class="contactInfoDetail"><i
+                class="fa fa-github"></i> <a href="" id="github"></a></article>
+    </div>
+    <br>
     </div>
 
 </body>
-
+<script src="script.js"></script>
 <script>
+
+
+
+    // Extract the 'contact' parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const contact = urlParams.get('contact');
+
+    // Call the contact_info function with the extracted value
+    if (contact) {
+        contact_info(contact);
+    }
+
     openContact();
 
     function closeContact() {
@@ -234,7 +257,7 @@
             contactDetail.classList.remove("visible"); // Remove visible class
         }, 500); // Match this to the CSS transition duration
     }
-   
+
 
     function openContact() {
         document.getElementsByTagName("body")[0].style.position = "fixed";
@@ -249,8 +272,6 @@
     }
 </script>
 
-<script src="script.js">
-</script>
 
 
 </html>

@@ -872,50 +872,87 @@ function SmallNav(){
 }
 
 
- // contact_info('Unknown');
-    function contact_info(value){
-        if(value == "Akwasi" ){
-            document.getElementsByTagName("person")[0].textContent = "MR. AKWASI AMANKWA";
-            document.getElementsByTagName("name")[0].textContent = "MR. AKWASI AMANKWA";
-            document.getElementById("email").textContent = "akwasiamankwa@gmail.com";
-            document.getElementById("email").setAttribute("href", "mailto: akwasiamankwa@gmail.com");
-            document.getElementById("phone").textContent = "+233-242-633-013";
-            document.getElementById("phone").setAttribute("href", "tel: +233242633013");
-            document.getElementById("whatsapp").textContent = "+233-242-633-013";
-            document.getElementById("telegram").textContent = "UNKNOWN";
-            document.getElementById("linkedin").textContent = "UNKNOWN";
-            document.getElementById("facebook").textContent = "MR. AKWASI AMANKWA";
-            document.getElementById("github").textContent = "UNKNOWN";
-            console.log(document.getElementById("email").getAttribute("href"));
-        }
+// contact_info('Unknown');
+ 
+let MapValue; 
 
-        if (value == "Beeni") {
-            document.getElementsByTagName("person")[0].textContent = "MRS. FUASTINA BEENI";
-            document.getElementsByTagName("name")[0].textContent = "MRS. FUASTINA BEENI";
-            document.getElementById("email").textContent = "fuastinabeeni@gmail.com";
-            document.getElementById("email").setAttribute("href", "mailto: fuastinabeeni@gmail.com");
-            document.getElementById("phone").textContent = "+233-544-191-665";
-            document.getElementById("phone").setAttribute("href", "tel: +233544191665");
-            document.getElementById("whatsapp").textContent = "+233-544-191-665";
-            document.getElementById("telegram").textContent = "UNKNOWN";
-            document.getElementById("linkedin").textContent = "UNKNOWN";
-            document.getElementById("facebook").textContent = "UNKNOWN";
-            document.getElementById("github").textContent = "UNKNOWN";
-            console.log(document.getElementById("email").getAttribute("href"));
-        }
+      console.log(MapValue);
 
-        if (value == "Unknown") {
-            document.getElementsByTagName("person")[0].textContent = "UNKNOWN";
-            document.getElementsByTagName("name")[0].textContent = "UNKNOWN";
-            document.getElementById("email").textContent = "UNKNOWN";
-            document.getElementById("email").setAttribute("href", "mailto: ");
-            document.getElementById("phone").textContent = "UNKNOWN";
-            document.getElementById("phone").setAttribute("href", "tel: 000000000");
-            document.getElementById("whatsapp").textContent = "UNKNOWN";
-            document.getElementById("telegram").textContent = "UNKNOWN";
-            document.getElementById("linkedin").textContent = "UNKNOWN";
-            document.getElementById("facebook").textContent = "UNKNOWN";
-            document.getElementById("github").textContent = "UNKNOWN";
-            console.log(document.getElementById("email").getAttribute("href"));
-        }
-    }
+
+function contact_info(value) {
+    if (value === "Akwasi") {
+        document.getElementsByTagName("person")[0].textContent = "MR. AKWASI AMANKWA";
+        document.getElementsByTagName("name")[0].textContent = "MR. AKWASI AMANKWA";
+        document.getElementById("email").textContent = "akwasiamankwa@gmail.com";
+        document.getElementById("email").setAttribute("href", "mailto:akwasiamankwa@gmail.com");
+        document.getElementById("phone").textContent = "+233-242-633-013";
+        document.getElementById("phone").setAttribute("href", "tel:+233242633013");
+        document.getElementById("whatsapp").textContent = "+233-242-633-013";
+        document.getElementById("telegram").textContent = "UNKNOWN";
+        document.getElementById("linkedin").textContent = "UNKNOWN";
+        document.getElementById("facebook").textContent = "MR. AKWASI AMANKWA";
+        document.getElementById("github").textContent = "UNKNOWN";
+    } else if (value === "Beeni") {
+        document.getElementsByTagName("person")[0].textContent = "MRS. FUASTINA BEENI";
+        document.getElementsByTagName("name")[0].textContent = "MRS. FUASTINA BEENI";
+        document.getElementById("email").textContent = "fuastinabeeni@gmail.com";
+        document.getElementById("email").setAttribute("href", "mailto:fuastinabeeni@gmail.com");
+        document.getElementById("phone").textContent = "+233-544-191-665";
+        document.getElementById("phone").setAttribute("href", "tel:+233544191665");
+        document.getElementById("whatsapp").textContent = "+233-544-191-665";
+        document.getElementById("telegram").textContent = "UNKNOWN";
+        document.getElementById("linkedin").textContent = "UNKNOWN";
+        document.getElementById("facebook").textContent = "UNKNOWN";
+        document.getElementById("github").textContent = "UNKNOWN";
+    } else if (value === "Unknown") {
+        document.getElementsByTagName("person")[0].textContent = "UNKNOWN";
+        document.getElementsByTagName("name")[0].textContent = "UNKNOWN";
+        document.getElementById("email").textContent = "UNKNOWN";
+        document.getElementById("email").setAttribute("href", "mailto:");
+        document.getElementById("phone").textContent = "UNKNOWN";
+        document.getElementById("phone").setAttribute("href", "tel:000000000");
+        document.getElementById("whatsapp").textContent = "UNKNOWN";
+        document.getElementById("telegram").textContent = "UNKNOWN";
+        document.getElementById("linkedin").textContent = "UNKNOWN";
+        document.getElementById("facebook").textContent = "UNKNOWN";
+        document.getElementById("github").textContent = "UNKNOWN";
+    } else if (value === "Self") {
+        document.getElementsByTagName("person")[0].textContent = "MR. BENEDICT AMANKWA";
+        document.getElementsByTagName("name")[0].textContent = "MR. BENEDICT AMANKWA";
+        document.getElementById("email").textContent = "benedictamankwa18@gmail.com";
+        document.getElementById("email").setAttribute("href", "mailto:benedictamankwa18@gmail.com");
+        document.getElementById("phone").textContent = "+233-594-500-785";
+        document.getElementById("phone").setAttribute("href", "tel:+233594500785");
+      document.getElementById("whatsapp").textContent = "+233-594-500-785";
+        document.getElementById("whatsapp").setAttribute("href", "https://wa.me/233594500785");
+        document.getElementById("telegram").textContent = "Kali0Nethunter";
+        document.getElementById("telegram").setAttribute("href", "https://t.me/Kali0Nethunter");
+        document.getElementById("linkedin").textContent = "Benedict (Osei) Amankwa";
+        document.getElementById("linkedin").setAttribute("href", "https://www.linkedin.com/in/benedict-amankwa-282402211/?originalSubdomain=gh");
+        document.getElementById("facebook").textContent = "UNKNOWN";
+        document.getElementById("facebook").setAttribute("href", "https://www.facebook.com/benedictamankwa18");
+      document.getElementById("github").textContent = "Benedict Osei Amankwa";
+        document.getElementById("github").setAttribute("href", "https://github.com/benedictamankw18");
+      
+    } 
+}
+    
+
+function toggleContactInfo() {
+const contactInfo = document.querySelector('.contact-info');
+
+  if (contactInfo.classList.contains('show')) {
+    contactInfo.classList.remove('show');
+    contactInfo.classList.add('hide');
+    setTimeout(() => {
+      contactInfo.style.display = 'none';
+    }, 1000); // Match the duration of the moveOut animation
+  } else {
+    contactInfo.style.display = 'block';
+    contactInfo.classList.remove('hide');
+    contactInfo.classList.add('show');
+  }
+}
+
+// Example: Attach this function to a button click
+document.querySelector('.button').addEventListener('click', toggleContactInfo);
