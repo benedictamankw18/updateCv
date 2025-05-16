@@ -388,14 +388,14 @@
                                 onclick="contact_info('Beeni')">Contact</button></a>
                     </div>
 
-                    <div class="card-ref">
+                    <!-- <div class="card-ref">
                         <div class="img-ref">
                             <img src="./progromming (4).jpeg" alt="">
                         </div>
                         <div class="ref-detail">FULL NAME</div>
                         <a href="./contact-info.html?contact=Unknown"><button class="ref-contact"
                                 onclick="contact_info('Unknown')">Contact</button></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -808,25 +808,33 @@
         </div> -->
 
             <div class="slider-container">
-                <div class="arrow" onclick="rotateLeft()">&#8592;</div>
-                <div class="carousel" id="carousel">
-                    <!-- These images will be updated by JS to assign correct sizes -->
-                    <img src="https://th.bing.com/th/id/OIP.oVMOfL0dd51o0UobpY6kNQHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain"
-                        alt="Sample certificate image" class="smaller">
-                    <img src="https://th.bing.com/th/id/OIP.kixJWKpk821IvWvBhTHLMwHaEI?rs=1&pid=ImgDetMain"
-                        alt="Sample certificate image" class="small">
-                    <img src="https://th.bing.com/th/id/OIP.ttSME0VWqw9y1eDPUMrXOgHaI3?rs=1&pid=ImgDetMain"
-                        alt="Sample certificate image" class="big">
-                    <img src="https://th.bing.com/th/id/OIP.oVMOfL0dd51o0UobpY6kNQHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain"
-                        alt="Sample certificate image" class="biggest">
-                    <img src="https://th.bing.com/th/id/OIP.kixJWKpk821IvWvBhTHLMwHaEI?rs=1&pid=ImgDetMain"
-                        alt="Sample certificate image" class="big">
-                    <img src="https://th.bing.com/th/id/OIP.ttSME0VWqw9y1eDPUMrXOgHaI3?rs=1&pid=ImgDetMain"
-                        alt="Sample certificate image" class="small">
-                    <img src="https://th.bing.com/th/id/OIP.oVMOfL0dd51o0UobpY6kNQHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain"
-                        alt="Sample certificate image" class="smaller">
+                <div class="arrow" onclick="rotateLeft()">
+                    <i class="fa fa-chevron-left"></i>
+                    <span class="arrow-text">Prev</span>
                 </div>
-                <div class="arrow" onclick="rotateRight()">&#8594;</div>
+                <div class="carousel" id="carousel"
+                    style="display: flex; overflow: hidden; width: 100%; height: 100%; ">
+
+                    <!-- These images will be updated by JS to assign correct sizes -->
+                    <img src="https://api2.sololearn.com/v2/certificates/CC-TBMGYJSZ/image/jpg?t=638632579496934440"
+                        alt="Sample certificate image">
+                    <img src="https://api2.sololearn.com/v2/certificates/CC-R0CWQCLL/image/png?t=638454613578363600"
+                        alt="Sample certificate image">
+                    <img src="https://api2.sololearn.com/v2/certificates/CC-3VJQ9G4E/image/png?t=638454613578363650"
+                        alt="Sample certificate image">
+                    <img src="https://api2.sololearn.com/v2/certificates/CC-PGGHVMNN/image/png?t=638454613578363600"
+                        alt="Sample certificate image">
+                    <img src="https://api2.sololearn.com/v2/certificates/CC-YTXF1PDX/image/png?t=638454613578363730"
+                        alt="Sample certificate image">
+                    <img src="https://api2.sololearn.com/v2/certificates/CC-JK78XAQX/image/png?t=638454613578363600"
+                        alt="Sample certificate image">
+                    <img src="https://api2.sololearn.com/v2/certificates/CC-QZZSXD6E/image/png?t=638519040990405980"
+                        alt="Sample certificate image">
+                </div>
+                <div class="arrow" onclick="rotateRight()">
+                    <span class="arrow-text">Next</span>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
             </div>
 
             <div class="main-side-nav-small">
