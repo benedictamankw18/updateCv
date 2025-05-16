@@ -17,6 +17,65 @@
     <title>Benedict's CV</title>
 </head>
 
+<style>
+    .slider-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .arrow {
+        font-size: 2rem;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        overflow: hidden;
+    }
+
+    .carousel img {
+        transition: all 0.3s ease-in-out;
+        margin: 0 5px;
+        border-radius: 10px;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+
+    .smaller {
+        width: 60px;
+        height: 40px;
+        opacity: 0.4;
+    }
+
+    .small {
+        width: 80px;
+        height: 60px;
+        opacity: 0.6;
+    }
+
+    .big {
+        width: 120px;
+        height: 90px;
+        opacity: 0.8;
+    }
+
+    .biggest {
+        width: 180px;
+        height: 120px;
+        border: 3px solid #333;
+        opacity: 1;
+        z-index: 10;
+    }
+</style>
+
 <body>
     <div class="warning" style="display: none;">
         <p>
@@ -821,5 +880,41 @@
 
 <script src="script.js"></script>
 <script src="./welcome.js"></script>
+<script>
+    const carousel = document.getElementById("carousel");
+
+    function updateClasses() {
+        const images = carousel.querySelectorAll("img");
+        const center = Math.floor(images.length / 2);
+
+        images.forEach((img, index) => {
+            img.className = ''; // reset classes
+
+            if (index === center) {
+                img.classList.add("biggest");
+            } else if (index === center - 1 || index === center + 1) {
+                img.classList.add("big");
+            } else if (index === center - 2 || index === center + 2) {
+                img.classList.add("small");
+            } else {
+                img.classList.add("smaller");
+            }
+        });
+    }
+
+    function rotateLeft() {
+        const first = carousel.firstElementChild;
+        carousel.appendChild(first);
+        updateClasses();
+    }
+
+    function rotateRight() {
+        const last = carousel.lastElementChild;
+        carousel.insertBefore(last, carousel.firstElementChild);
+        updateClasses();
+    }
+
+    updateClasses(); // initialize on load
+</script>
 
 </html>
