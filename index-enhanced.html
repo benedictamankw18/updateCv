@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benedict Amankwa - Full Stack Developer, UI/UX Designer, and Cybersecurity Specialist. Building innovative web solutions with modern technologies.">
+    <meta name="keywords" content="Benedict Amankwa, Web Developer, Full Stack Developer, UI/UX Designer, Cybersecurity, JavaScript, Python, Java, React">
+    <meta name="author" content="Benedict Amankwa Osei">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Benedict Amankwa - Portfolio & CV">
+    <meta property="og:description" content="Full Stack Developer and Cybersecurity Specialist specializing in modern web technologies">
+    <meta property="og:image" content="./assets/images/benedict-portfolio-preview.jpg">
+    <meta property="og:url" content="https://benedictamankw.dev">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Benedict Amankwa - Portfolio & CV">
+    <meta name="twitter:description" content="Full Stack Developer and Cybersecurity Specialist">
+    <meta name="twitter:image" content="./assets/images/benedict-portfolio-preview.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://benedictamankw.dev">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./logo.ico">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/critical.css">
+    <link rel="stylesheet" href="./assets/css/enhanced-styles.css">
+    <link rel="stylesheet" href="./assets/css/modern-styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive-fixes.css">
+    <link rel="stylesheet" href="./assets/css/centering-fixes.css">
+    
+    <!-- Modal Styles -->
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            animation: modalSlideIn 0.3s ease-out;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-header {
+            padding: 24px 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e5e7eb;
+            margin-bottom: 24px;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #6b7280;
+            cursor: pointer;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .modal-close:hover {
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+
+        .modal-body {
+            padding: 0 24px;
+        }
+
+        #modal-image-container {
+            margin-bottom: 24px;
+        }
+
+        #modal-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .modal-body h4 {
+            margin: 20px 0 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .modal-body p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .modal-body ul {
+            color: #6b7280;
+            padding-left: 20px;
+        }
+
+        .modal-body li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .modal-footer {
+            padding: 24px;
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .modal {
+                padding: 10px;
+            }
+            
+            .modal-content {
+                max-height: 95vh;
+            }
+            
+            .modal-header,
+            .modal-body,
+            .modal-footer {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            
+            .modal-footer {
+                flex-direction: column;
+            }
+            
+            .modal-footer .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Benedict Amankwa Osei",
+        "jobTitle": "Full Stack Developer",
+        "url": "https://benedictamankw.dev",
+        "sameAs": [
+            "https://github.com/benedictamankw18",
+            "https://www.linkedin.com/in/benedict-amankwa-991a5635b/?originalSubdomain=gh"
+        ],
+        "knowsAbout": [
+            "Web Development",
+            "JavaScript",
+            "Python",
+            "Java",
+            "Cybersecurity",
+            "UI/UX Design"
+        ],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "University Of Education, Winneba"
+        }
+    }
+    </script>
+    
+    <title>Benedict Amankwa - Full Stack Developer & Cybersecurity Specialist</title>
+</head>
+
+<body class="loading">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Modern Navigation -->
+    <nav class="modern-nav" role="navigation" aria-label="Main navigation">
+        <div class="container flex items-center justify-between">
+            <div class="nav-brand">
+                <a href="#home" class="flex items-center gap-2">
+                    <img src="./IMG_9346 (2).jpg" alt="Benedict Amankwa" class="w-10 h-10 rounded-full">
+                    <span class="font-bold text-xl">Benedict</span>
+                </a>
+            </div>
+            
+            <div class="nav-links hidden md:flex items-center gap-6">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#SKILLS" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#PROJECT" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions flex items-center gap-4">
+                <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView()">
+                    Let's Talk
+                </button>
+                <button class="mobile-menu-toggle md:hidden" aria-label="Toggle mobile menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Progress Indicator -->
+    <div class="page-progress"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-menu-link">Home</a>
+            <a href="#about" class="mobile-menu-link">About</a>
+            <a href="#SKILLS" class="mobile-menu-link">Skills</a>
+            <a href="#experience" class="mobile-menu-link">Experience</a>
+            <a href="#PROJECT" class="mobile-menu-link">Projects</a>
+            <a href="#contact" class="mobile-menu-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Warning for very small screens -->
+    <div class="warning" role="alert">
+        <div class="warning-content">
+            <h2>Screen Size Not Supported</h2>
+            <p>For the best experience, please view this site on a larger screen.</p>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section" role="banner">
+        <div class="hero-background">
+            <div class="animated-background">
+                <!-- Animated background elements -->
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Benedict Amankwa</span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <span>I AM A </span>
+                    <span id="typing-effect"></span>
+                </div>
+
+                <p class="hero-description">
+                    A passionate full-stack developer and cybersecurity specialist with expertise in modern web technologies.
+                    I create innovative solutions that combine functionality with security.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#PROJECT" class="btn btn-primary">
+                        <i class="fa fa-folder"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="./IMG_9346 (2).jpg" alt="Benedict Amankwa - Professional Photo" class="profile-image">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">
+            <span>Scroll Down</span>
+            <i class="fa fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                
+                <div class="about-content grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="about-text">
+                        <h3 class="text-2xl font-bold mb-4">Creating Digital Excellence</h3>
+                        <p class="text-lg mb-6">
+                            I am a dedicated student and aspiring professional seeking opportunities to utilize my skills 
+                            and passion in support of innovative companies. With strong proficiency in various programming 
+                            languages and modern development frameworks, I bring a unique blend of technical expertise 
+                            and creative problem-solving.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <i class="fa fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <p>Bachelor of Science in ICT Education<br>University of Education, Winneba</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight">
+                                <i class="fa fa-map-marker"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Ghana, Available for Remote Work</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight">
+                                <i class="fa fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>benedictamankwa18@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="./progromming (1).jpeg" alt="Benedict coding" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="SKILLS" class="section skills-section reveal">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                
+                <div class="skills-grid grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Technical Skills -->
+                    <div class="skill-category card">
+                        <div class="card-header">
+                            <h3 class="text-xl font-bold">
+                                <i class="fa fa-code"></i>
+                                Technical Skills
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="skills-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">JavaScript & TypeScript</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-percentage="90"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <span class="skill-name">React & Next.js</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-percentage="85"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <span class="skill-name">Python & Django</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-percentage="80"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <span class="skill-name">Java & Spring Boot</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-percentage="75"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <span class="skill-name">Database Management</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-percentage="85"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <span class="skill-name">Cybersecurity</span>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" data-percentage="70"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Soft Skills -->
+                    <div class="skill-category card">
+                        <div class="card-header">
+                            <h3 class="text-xl font-bold">
+                                <i class="fa fa-users"></i>
+                                Soft Skills
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="soft-skills-grid">
+                                <div class="skill-tag">Problem Solving</div>
+                                <div class="skill-tag">Team Collaboration</div>
+                                <div class="skill-tag">Communication</div>
+                                <div class="skill-tag">Leadership</div>
+                                <div class="skill-tag">Adaptability</div>
+                                <div class="skill-tag">Time Management</div>
+                                <div class="skill-tag">Critical Thinking</div>
+                                <div class="skill-tag">Creativity</div>
+                            </div>
+                            
+                            <div class="tools-section mt-6">
+                                <h4 class="font-semibold mb-3">Tools & Technologies</h4>
+                                <div class="tools-grid">
+                                    <div class="tool-item">
+                                        <i class="fa fa-git"></i>
+                                        <span>Git & GitHub</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fa fa-cloud"></i>
+                                        <span>AWS & Azure</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fa fa-docker"></i>
+                                        <span>Docker</span>
+                                    </div>
+                                    <div class="tool-item">
+                                        <i class="fa fa-figma"></i>
+                                        <span>Figma</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section reveal">
+            <div class="container">
+                <h2 class="section-title">Experience & Education</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content card">
+                            <div class="timeline-date">2023 - 2027</div>
+                            <h3>Bachelor of Science (ICT Education)</h3>
+                            <h4>University Of Education, Winneba</h4>
+                            <p>Currently pursuing a degree in ICT Education with a focus on software development, cybersecurity, and educational technology. GPA: 3.5/4.0</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <!-- <i class="fa fa-school"></i> -->
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="timeline-content card">
+                            <div class="timeline-date">2020 - 2023</div>
+                            <h3>General Arts</h3>
+                            <h4>Akwamuman Senior High School, Akosombo</h4>
+                            <p>Completed senior high school education with excellent grades in arts and humanities subjects.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="timeline-content card">
+                            <div class="timeline-date">2021 - Present</div>
+                            <h3>Self-Taught Developer</h3>
+                            <h4>Personal Projects & Learning</h4>
+                            <p>Developed expertise in web development, mobile applications, and cybersecurity through hands-on projects and continuous learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="PROJECT" class="section projects-section reveal">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="project-filters mb-8">
+                    <!-- Filter buttons will be added by JavaScript -->
+                </div>
+                
+                <div class="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Restaurant Management System -->
+                    <article class="project-card card visual-basic animate-on-scroll">
+                        <div class="project-image">
+                            <img src="./VisualBasicNET.jpg" alt="Restaurant Management System" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/benedictamankw18/Fast-Food-Restaurant" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-github"></i>
+                                        Code
+                                    </a>
+                                    <button class="btn btn-secondary btn-sm" onclick="openProjectModal('restaurant')">
+                                        <i class="fa fa-eye"></i>
+                                        Preview
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Restaurant Management System</h3>
+                            <p class="project-description">
+                                A comprehensive Visual Basic application for managing restaurant operations including menu management, order processing, and receipt generation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Visual Basic</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Database Design</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Visa Application System -->
+                    <article class="project-card card mysql animate-on-scroll">
+                        <div class="project-image">
+                            <img src="./visa.png" alt="Visa Application System" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/benedictamankw18/visa-Application" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-github"></i>
+                                        Code
+                                    </a>
+                                    <button class="btn btn-secondary btn-sm" onclick="openProjectModal('visa')">
+                                        <i class="fa fa-eye"></i>
+                                        Preview
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Visa Application System</h3>
+                            <p class="project-description">
+                                A secure database system for managing visa applications with user authentication, application tracking, and status management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Database Security</span>
+                                <span class="tech-tag">Authentication</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Employee Management System -->
+                    <article class="project-card card java animate-on-scroll">
+                        <div class="project-image">
+                            <img src="./java.jpeg" alt="Employee Management System" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/benedictamankw18/employee-management" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-github"></i>
+                                        Code
+                                    </a>
+                                    <button class="btn btn-secondary btn-sm" onclick="openProjectModal('employee')">
+                                        <i class="fa fa-eye"></i>
+                                        Preview
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Employee Entry Management</h3>
+                            <p class="project-description">
+                                A Java-based application for managing employee data with file-based operations and administrative controls.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">File I/O</span>
+                                <span class="tech-tag">Swing GUI</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tech Blog Website -->
+                    <article class="project-card card website animate-on-scroll">
+                        <div class="project-image">
+                            <img src="./website.jpg" alt="Tech Blog Website" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/benedictamankw18/2023_tech" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-github"></i>
+                                        Code
+                                    </a>
+                                    <button class="btn btn-secondary btn-sm" onclick="openProjectModal('techblog')">
+                                        <i class="fa fa-eye"></i>
+                                        Preview
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Tech Blog 2023</h3>
+                            <p class="project-description">
+                                A modern responsive blog website showcasing the latest technology trends and innovations for 2023.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Cybersecurity Projects -->
+                    <article class="project-card card cyberSecurity animate-on-scroll">
+                        <div class="project-image">
+                            <img src="./cybersecurity.jpg" alt="Cybersecurity Projects" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/benedictamankw18/cybersecurity-portfolio" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-shield"></i>
+                                        Portfolio
+                                    </a>
+                                    <button class="btn btn-secondary btn-sm" onclick="openProjectModal('security')">
+                                        <i class="fa fa-eye"></i>
+                                        Preview
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Cybersecurity Portfolio</h3>
+                            <p class="project-description">
+                                Collection of cybersecurity projects including penetration testing, vulnerability assessments, and security tools.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Penetration Testing</span>
+                                <span class="tech-tag">Vulnerability Assessment</span>
+                                <span class="tech-tag">Security Analysis</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- JavaScript Projects -->
+                    <article class="project-card card javascript animate-on-scroll">
+                        <div class="project-image">
+                            <img src="./javascript.jpeg" alt="JavaScript Projects" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-actions">
+                                    <a href="https://github.com/benedictamankw18/javascript-projects" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-github"></i>
+                                        Code
+                                    </a>
+                                    <button class="btn btn-secondary btn-sm" onclick="openProjectModal('javascript')">
+                                        <i class="fa fa-eye"></i>
+                                        Preview
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">JavaScript Applications</h3>
+                            <p class="project-description">
+                                Interactive web applications built with vanilla JavaScript, showcasing DOM manipulation and modern ES6+ features.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">ES6+</span>
+                                <span class="tech-tag">DOM Manipulation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+                
+                <div class="text-center mt-8">
+                    <a href="https://github.com/benedictamankw18" class="btn btn-secondary">
+                        <i class="fa fa-github"></i>
+                        View All Projects on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certifications-section reveal">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                
+                <div class="certifications-carousel">
+                    <div class="carousel-container">
+                        <div class="cert-item">
+                            <img src="https://api2.sololearn.com/v2/certificates/CC-YTXF1PDX/image/png?t=638454613578363730" 
+                                 alt="SoloLearn Certificate" loading="lazy">
+                        </div>
+                        <div class="cert-item">
+                            <img src="https://api2.sololearn.com/v2/certificates/CC-JK78XAQX/image/png?t=638454613578363600" 
+                                 alt="SoloLearn Certificate" loading="lazy">
+                        </div>
+                        <div class="cert-item">
+                            <img src="https://api2.sololearn.com/v2/certificates/CC-QZZSXD6E/image/png?t=638519040990405980" 
+                                 alt="SoloLearn Certificate" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section reveal">
+            <div class="container">
+                <h2 class="section-title">Let's Work Together</h2>
+                
+                <div class="contact-content grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+                        <p class="text-lg mb-8">
+                            I'm always interested in new opportunities and exciting projects. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:benedictamankwa18@gmail.com">benedictamankwa18@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+233594500785">+233 59 450 0785</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <span>Ghana (Open to Remote Work)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h4 class="font-semibold mb-4">Follow Me</h4>
+                            <div class="social-icons">
+                                <a href="https://github.com/benedictamankw18" class="social-link" aria-label="GitHub">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/benedict-amankwa-991a5635b/?originalSubdomain=gh" class="social-link" aria-label="LinkedIn">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="https://t.me/n3thunt3rsocial" class="social-link" aria-label="Telegram">
+                                    <i class="fa fa-telegram"></i>
+                                </a>
+                                <a href="https://wa.me/233594500785" class="social-link" aria-label="WhatsApp">
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form card">
+                            <div class="card-header">
+                                <h3 class="text-xl font-bold">Send Me a Message</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name *</label>
+                                    <input type="text" id="name" name="name" class="form-input" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-input">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
+                                </div>
+                                
+                                <button type="submit" id="submit-btn" class="btn btn-primary w-full">
+                                    <i class="fa fa-send"></i>
+                                    <span>Send Message</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="font-bold text-lg mb-4">Benedict Amankwa</h3>
+                    <p class="text-sm">
+                        Full Stack Developer & Cybersecurity Specialist<br>
+                        Building the future, one line of code at a time.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="font-semibold mb-3">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#SKILLS">Skills</a></li>
+                        <li><a href="#PROJECT">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="font-semibold mb-3">Services</h4>
+                    <ul class="footer-links">
+                        <li>Web Development</li>
+                        <li>Mobile Applications</li>
+                        <li>UI/UX Design</li>
+                        <li>Cybersecurity</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="font-semibold mb-3">Connect</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/benedictamankw18" class="social-link" aria-label="GitHub">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/benedict-amankwa-991a5635b/?originalSubdomain=gh" class="social-link" aria-label="LinkedIn">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https://t.me/n3thunt3rsocial" class="social-link" aria-label="Telegram">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/233594500785" class="social-link" aria-label="WhatsApp">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:benedictamankwa18@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Benedict Amankwa. All rights reserved.</p>
+                <p>Built with ❤️ using modern web technologies</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-image-container">
+                    <img id="modal-image" src="" alt="">
+                </div>
+                <div id="modal-description"></div>
+                <div id="modal-tech-stack"></div>
+                <div id="modal-features"></div>
+            </div>
+            <div class="modal-footer">
+                <a id="modal-github-link" href="#" class="btn btn-primary" target="_blank">
+                    <i class="fa fa-github"></i> View Code
+                </a>
+                <a id="modal-demo-link" href="#" class="btn btn-secondary" target="_blank">
+                    <i class="fa fa-external-link"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-to-top" onclick="smoothScrollToTop()" aria-label="Scroll to top">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/enhanced-app.js"></script>
+    
+    <!-- Project Modal Script -->
+    <script>
+        // Project Modal Functionality
+        const projectData = {
+            restaurant: {
+                title: "Restaurant Management System",
+                image: "./VisualBasicNET.jpg",
+                description: "A comprehensive Visual Basic application for managing restaurant operations including menu management, order processing, and receipt generation.",
+                techStack: ["Visual Basic", "MySQL", "Database Design"],
+                features: [
+                    "Menu management and item tracking",
+                    "Order processing system",
+                    "Receipt generation",
+                    "Customer management",
+                    "Inventory tracking"
+                ],
+                githubLink: "https://github.com/benedictamankw18/Fast-Food-Restaurant",
+                demoLink: "#"
+            },
+            visa: {
+                title: "Visa Application System",
+                image: "./visa.png",
+                description: "A secure database system for managing visa applications with user authentication, application tracking, and status management.",
+                techStack: ["MySQL", "Database Security", "Authentication"],
+                features: [
+                    "User authentication system",
+                    "Application status tracking",
+                    "Document management",
+                    "Admin dashboard",
+                    "Secure data handling"
+                ],
+                githubLink: "https://github.com/benedictamankw18/visa-Application",
+                demoLink: "#"
+            },
+            employee: {
+                title: "Employee Entry Management",
+                image: "./java.jpeg",
+                description: "A Java-based application for managing employee data with file-based operations and administrative controls.",
+                techStack: ["Java", "File I/O", "Swing GUI"],
+                features: [
+                    "Employee data management",
+                    "File-based storage",
+                    "GUI interface",
+                    "Administrative controls",
+                    "Data validation"
+                ],
+                githubLink: "https://github.com/benedictamankw18/employee-management",
+                demoLink: "#"
+            },
+            techblog: {
+                title: "Tech Blog 2023",
+                image: "./website.jpg",
+                description: "A modern responsive blog website showcasing the latest technology trends and innovations for 2023.",
+                techStack: ["HTML5", "CSS3", "Responsive Design"],
+                features: [
+                    "Responsive design",
+                    "Modern UI/UX",
+                    "Blog post management",
+                    "Tech news aggregation",
+                    "Mobile-first approach"
+                ],
+                githubLink: "https://github.com/benedictamankw18/2023_tech",
+                demoLink: "#"
+            },
+            security: {
+                title: "Cybersecurity Portfolio",
+                image: "./cybersecurity.jpg",
+                description: "Collection of cybersecurity projects including penetration testing, vulnerability assessments, and security tools.",
+                techStack: ["Penetration Testing", "Vulnerability Assessment", "Security Analysis"],
+                features: [
+                    "Penetration testing tools",
+                    "Vulnerability scanners",
+                    "Security analysis reports",
+                    "Risk assessment",
+                    "Security recommendations"
+                ],
+                githubLink: "https://github.com/benedictamankw18/cybersecurity-portfolio",
+                demoLink: "#"
+            },
+            javascript: {
+                title: "JavaScript Applications",
+                image: "./javascript.jpeg",
+                description: "Interactive web applications built with vanilla JavaScript, showcasing DOM manipulation and modern ES6+ features.",
+                techStack: ["JavaScript", "ES6+", "DOM Manipulation"],
+                features: [
+                    "Interactive UI components",
+                    "Modern JavaScript features",
+                    "DOM manipulation",
+                    "Event handling",
+                    "API integration"
+                ],
+                githubLink: "https://github.com/benedictamankw18/javascript-projects",
+                demoLink: "#"
+            }
+        };
+
+        function openProjectModal(projectId) {
+            const project = projectData[projectId];
+            if (!project) return;
+
+            document.getElementById('modal-title').textContent = project.title;
+            document.getElementById('modal-image').src = project.image;
+            document.getElementById('modal-image').alt = project.title;
+            
+            document.getElementById('modal-description').innerHTML = `<p>${project.description}</p>`;
+            
+            document.getElementById('modal-tech-stack').innerHTML = `
+                <h4>Technologies Used:</h4>
+                <div class="tech-stack">
+                    ${project.techStack.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+            `;
+            
+            document.getElementById('modal-features').innerHTML = `
+                <h4>Key Features:</h4>
+                <ul>
+                    ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                </ul>
+            `;
+            
+            document.getElementById('modal-github-link').href = project.githubLink;
+            document.getElementById('modal-demo-link').href = project.demoLink;
+            
+            document.getElementById('project-modal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            document.getElementById('project-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('click', function(e) {
+            const modal = document.getElementById('project-modal');
+            if (e.target === modal) {
+                closeProjectModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeProjectModal();
+            }
+        });
+
+        // Smooth scroll function
+        function smoothScrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Initialize any missing functionality when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Remove loading screen
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                setTimeout(() => {
+                    loadingScreen.style.opacity = '0';
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                        document.body.classList.remove('loading');
+                    }, 300);
+                }, 500);
+            }
+
+window.onload = () => {
+  const typingElement = document.getElementById('typing-effect');
+
+  if (typingElement) {
+    const texts = [
+      'WEB DEVELOPER',
+      'UI/UX DESIGNER',
+      'CYBERSECURITY SPECIALIST',
+      'FULL STACK DEVELOPER',
+      'PROBLEM SOLVER'
+    ];
+
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeSpeed = 100;
+
+    function type() {
+      const currentText = texts[textIndex];
+
+      if (isDeleting) {
+        typingElement.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+        typeSpeed = 50;
+      } else {
+        typingElement.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+        typeSpeed = 100;
+      }
+
+      if (!isDeleting && charIndex === currentText.length) {
+        typeSpeed = 3000;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        typeSpeed = 500;
+      }
+
+      setTimeout(type, typeSpeed);
+    }
+
+    type(); // Start typing
+  }
+};
+
+
+            // Initialize mobile menu toggle
+            const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuToggle && mobileMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('active');
+                    this.classList.toggle('active');
+                });
+
+                // Close mobile menu when clicking a link
+                const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenu.classList.remove('active');
+                        mobileMenuToggle.classList.remove('active');
+                    });
+                });
+            }
+
+            // Smooth scroll for navigation links
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Show/hide scroll to top button
+            const scrollTopBtn = document.getElementById('scroll-top');
+            if (scrollTopBtn) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        scrollTopBtn.style.opacity = '1';
+                        scrollTopBtn.style.visibility = 'visible';
+                    } else {
+                        scrollTopBtn.style.opacity = '0';
+                        scrollTopBtn.style.visibility = 'hidden';
+                    }
+                });
+            }
+
+            // Initialize form submission
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    // Prevent default form submission
+                    e.preventDefault();
+                    
+                    const submitBtn = document.getElementById('submit-btn');
+                    const submitBtnText = submitBtn.querySelector('span');
+                    const originalText = submitBtnText.textContent;
+                    
+                    // Change button to loading state
+                    submitBtn.disabled = true;
+                    submitBtnText.textContent = 'Sending...';
+                    
+                    // Basic form validation
+                    const formData = new FormData(this);
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const message = formData.get('message');
+                    const subject = formData.get('subject') || 'Portfolio Contact Form';
+                    
+                    if (!name || !email || !message) {
+                        submitBtn.disabled = false;
+                        submitBtnText.textContent = originalText;
+                        alert('Please fill in all required fields.');
+                        return false;
+                    }
+                    
+                    // Simple email validation
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        submitBtn.disabled = false;
+                        submitBtnText.textContent = originalText;
+                        alert('Please enter a valid email address.');
+                        return false;
+                    }
+                    
+                    // Create a formatted mailto body (URL encoded)
+                    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`);
+                    const subjectEncoded = encodeURIComponent(subject);
+                    
+                    // Create mailto URL
+                    const mailtoUrl = `mailto:benedictamankwa18@gmail.com?subject=${subjectEncoded}&body=${body}`;
+                    
+                    // Small delay to show the sending state
+                    setTimeout(() => {
+                        // Open email client
+                        window.location.href = mailtoUrl;
+                        
+                        // Reset button and form
+                        submitBtn.disabled = false;
+                        submitBtnText.textContent = originalText;
+                        
+                        // Show success message and reset form
+                        setTimeout(() => {
+                            alert('Your email client should open now. Thank you for reaching out!');
+                            this.reset();
+                        }, 500);
+                    }, 500);
+                    
+                    return false;
+                });
+            }
+
+            console.log('Portfolio enhancements loaded successfully!');
+        });
+    </script>
+    
+    <!-- Service Worker Registration handled in enhanced-app.js -->
+    
+    <!-- Google Analytics (replace with your tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID">
+
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+</body>
+</html>
